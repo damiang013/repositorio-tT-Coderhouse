@@ -229,13 +229,14 @@ footer button a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-content: center;
 }
 
 .slider_news-container{
     width: 100%;
     margin: auto;
     animation: slider 20s infinite alternate ease-in-out;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
 @keyframes slider{
@@ -275,7 +276,7 @@ footer button a{
     font-weight: 600;
     text-align: center;
     font-size: 1.2em;
-    margin: 15px 0;
+    margin: 40px 0 10px 0;
 }
 
 .prod-container, .last-prod-container{
@@ -507,8 +508,8 @@ footer button a{
     grid-template-areas:
         "processor processor ssd ssd monitor ram"
         "processor processor case case monitor ram"
-        "vid-amd vid-nvdia case case power-supply power-supply"
-        "vid-amd vid-nvdia motherboard motherboard cleaning cleaning";
+        "vid-amd vid-nvidia case case power-supply power-supply"
+        "vid-amd vid-nvidia motherboard motherboard cleaning cleaning";
     width: 80%;
     height: 700px;
     margin: auto;
@@ -530,8 +531,15 @@ footer button a{
 
 .categories-container div h6{
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     color: #000;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.categories-container div a{
+    font-family: 'Roboto', sans-serif;
+    color: #6c0090;
+    text-decoration: none;
 }
 
 .categories__processor{
@@ -554,8 +562,8 @@ footer button a{
     grid-area: vid-amd;
 }
 
-.categories__vid-nvdia{
-    grid-area: vid-nvdia;
+.categories__vid-nvidia{
+    grid-area: vid-nvidia;
 }
 
 .categories__case{
@@ -572,6 +580,39 @@ footer button a{
 
 .categories__cleaning{
     grid-area: cleaning;
+}
+
+.brands-container{
+    width: 100%;
+    height: 160px;
+    margin: 0 auto 80px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.brands__slider{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: calc(250px * 26);
+    height: 100%;
+    animation: scroll 40s linear infinite;
+}
+
+.brands__slider div{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 50px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+
+    background-color: white;
+}
+
+@keyframes scroll{
+    0%{transform: translateX(0);}
+
+    100%{transform: translateX(calc(-250px * 13));}
 }
 
 
