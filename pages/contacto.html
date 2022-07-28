@@ -7,7 +7,7 @@
     <title>treizeTech</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="grid-container">
     <header class="header-container">
         <a href="../index.html"><img src="../media/main-logo.png" alt="" class="header__logo"></a>
         <input type="text" placeholder="Buscar productos..." class="header__bar">
@@ -31,27 +31,30 @@
     </nav>
     <main class="main-container">
         <div class="contact-box">
-            <p class="contact-text">Dejanos tu consulta!</p>
             <form action="#" class="contact-form">
+                <p class="contact-text">Dejanos tu consulta!</p>
                 <input type="text" class="contact-form__first-name" required id="first-name" placeholder="Nombre">
                 <input type="text" class="contact-form__last-name" required id="last-name" placeholder="Apellido">
                 <input type="email" class="contact-form__email" required id="email" placeholder="Email">
-                <input type="number" class="contact-form__phone-number" required id="number" placeholder="Teléfono">
+                <input type="tel" class="contact-form__phone-number" required id="tel" placeholder="Teléfono">
                 <textarea name="md-box" id="md-box" class="contact-form__msj-box" required cols="30" rows="12" placeholder="Mensaje"></textarea>
                 <button type="submit" class="contact-form__button">Enviar</button>
             </form>
         </div>
     </main>
-    <footer>
-        <div class="footer-box__left">
-            <button><a href="#" class="footer-box__refund-text">¡Botón de arrepentimiento!</a></button>
-        </div>
-        <div class="footer-box__mid">
-            <p><span class="footer-box__span-0">Todos los derechos reservados</span> <br> <span class="footer-box__span-1">2022</span> <br> treizeTech</p>
-        </div>
-        <div class="footer-box__right">
-            <button><a href="../pages/work-w-us.html" class="footer-box__work-w-us-text">¡Trabajá con nosotros!</a></button>
-        </div> 
+    <footer class="footer-container">
+        <button class="footer__refund-btn">
+            <a href="#" class="footer__refund-text">¡Botón de arrepentimiento!</a>
+        </button>
+        <p class="footer__mid-text">
+            <span class="footer__span-0">Todos los derechos reservados</span> <br> 
+            <span class="footer__span-1">2022</span>
+            <br> 
+            treizeTech
+        </p>
+        <button class="footer__work-w-us-btn">
+            <a href="../pages/work-w-us.html" class="footer__work-w-us-text">¡Trabajá con nosotros!</a>
+        </button>
     </footer>
 </body>
 </html>

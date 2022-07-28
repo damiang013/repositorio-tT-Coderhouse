@@ -16,20 +16,10 @@ body{
     overflow-x: hidden;
 }
 
-/* @media (max-width: 768px){
-    .grid-container{
-        grid-template-rows: 130px auto 130px;
-        grid-template-areas:
-        "header header header"
-        "nav main main"
-        "footer footer footer";
-    }
-} */
-
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 130px 33px auto 140px;
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
         "header header header"
         "nav nav nav"
@@ -53,7 +43,7 @@ body{
     grid-area: logo;
     max-width: 100%;
     width: 20vw;
-    margin: 0 2em 0 1em;
+    margin: 20px 2em 20px 1em;
 }
 
 .header__bar{
@@ -109,6 +99,47 @@ body{
     height: 100%;
 }
 
+@media screen and (max-width: 1024px){
+    .header-container{
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 1fr 70px 4px;
+        grid-template-areas: 
+        "logo bar"
+        "social-login social-login"
+        "rgb rgb"; 
+        align-content: center;
+        justify-content: center; 
+    }
+
+    .header__logo{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header__social-login{
+        justify-self: center;
+        align-self: center;
+        margin: 0 0 20px 0;
+        height: 40px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+        justify-content: space-between;
+        align-content: center;
+
+    }
+    
+    .header__social-login a{
+        margin: 0;
+    }
+
+    .header__social-login__login{
+        border: none;
+        padding: 0;
+    }
+
+}
+
 .nav-container{
     background: #000;
     grid-area: nav;
@@ -124,11 +155,11 @@ body{
 .nav-list__item{
     text-align: center;
     width: 20%;
+    transition: all .3s;
 }
 
 .nav-list__item:hover{
     background: rgb(44, 44, 44);
-    transition: all .3s;  
 }
 
 .nav-list__link{
@@ -148,6 +179,16 @@ body{
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
 }
 
+@media screen and (max-width: 1024px){
+    .nav-list__link{
+        line-height: 60px;
+    }
+
+    .nav-list__mid-item{
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    }
+}
+
 .main-container{
     grid-area: main;
 }
@@ -163,6 +204,7 @@ body{
         "refund-btn mid-text work-btn";
     justify-items: center;
     align-items: center;
+    height: 140px;
 }
 
 .footer__refund-btn{
@@ -223,6 +265,20 @@ footer button a{
     color: #fff;
 }
 
+@media screen and (max-width: 1024px){
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "refund-btn mid-text"
+            "work-btn mid-text";
+        height: 200px;
+    }
+
+    footer button{
+        width: 350px;
+    }
+}
+
 /* ---index--- */
 
 .index-container{
@@ -276,7 +332,7 @@ footer button a{
     font-weight: 600;
     text-align: center;
     font-size: 1.2em;
-    margin: 40px 0 10px 0;
+    margin: 80px 0 10px 0;
 }
 
 .prod-container, .last-prod-container{
@@ -615,5 +671,132 @@ footer button a{
     100%{transform: translateX(calc(-250px * 13));}
 }
 
+/* ---hardware--- */
 
+/* ---perifericos--- */
 
+/* ---arma-tu-pc--- */
+
+/* ---sucursales--- */
+
+/* ---contacto--- */
+
+.contact-box{
+    width: 80vw;
+    height: 80vh;
+    margin: 90px auto;
+    background: linear-gradient(0deg,#cc00ff 0%, #e7e7e7 50%);
+    border-radius: 0.8em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.contact-form > *{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.contact-form > *:focus{
+    outline: none;
+}
+
+.contact-form > input, textarea{
+    border: 1px solid #cc00ff;
+    text-indent: 1em;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+        "contact-text contact-text"
+        "first-name last-name"
+        "email phone"
+        "msj-box msj-box"
+        "submit-button submit-button";
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-text{
+    grid-area: contact-text;
+    font-size: 2em;
+    padding: 20px;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: .3s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.contact-form__first-name{
+    grid-area: first-name;
+}
+
+.contact-form__last-name{
+    grid-area: last-name;
+}
+
+.contact-form__email{
+    grid-area: email;
+}
+
+.contact-form__phone-number{
+    grid-area: phone;
+}
+
+.contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number{
+    width: 80%;
+    height: 5vh;
+}
+
+.contact-form__msj-box{
+    grid-area: msj-box;
+    width: 90%;
+}
+
+.contact-form__button{
+    grid-area: submit-button;
+    width: 20vw;
+    height: 5vh;
+    border: 2px solid #000;
+    background-image: linear-gradient(45deg, #000 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    border-radius: 2.5vh;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    transition: all .9s;
+    font-size: 1.2em;
+}
+
+.contact-form__button:hover{
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    background-position: 0;
+    color: white;
+}
+
+/* ---trabaja-con-nosotros--- */
