@@ -51,11 +51,13 @@ body{
     height: 35px;
     width: 90%;
     background: none;
-    border: solid 1px white;
+    background: #fff ;
+    border: none;
     border-radius: 0.8em;
-    color: white;
+    color: #000;
     text-indent: 0.7em;
     justify-self: center;
+    outline: none;
 }
 
 .header__social-login{
@@ -140,9 +142,55 @@ body{
 
 }
 
+@media screen and (max-width: 768px){
+    .header-container{
+        grid-template-rows: auto auto 4px;
+        grid-template-areas: 
+        "social-login social-login social-login"
+        "bar bar bar"
+        "rgb rgb rgb";
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header__logo{
+        display: none;
+    }
+
+    .header__social-login{
+        justify-self: center;
+        align-self: center;
+        margin: 10px 0;
+        height: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+
+    }
+
+    .header__bar{
+        width: 80%;
+        margin: 25px 0;
+    }
+}
+
 .nav-container{
     background: #000;
     grid-area: nav;
+}
+
+#nav-check {
+    display: none;
+}
+
+.nav-hamburguer__logo{
+    display: none;
+}
+
+.nav-home__logo{
+    display: none;
 }
 
 .nav-list{
@@ -189,6 +237,70 @@ body{
     }
 }
 
+@media screen and (max-width: 768px){
+    .nav-hamburguer__logo, .nav-home__logo{
+        display: inline-block;
+        text-align: center;
+        width: calc(50% - 2px);
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .nav-hamburguer__logo{
+        border-right: 1px solid #fff;
+    }
+
+    .nav-hamburguer__logo i, .nav-home__logo i{
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .nav-list{
+        position: fixed;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        height: 0vh;
+        text-align: center;
+        background: rgba(0,0,0,0.95);
+        transition: all .5s;
+        z-index: 1000;
+    }
+
+    .nav-list__item{
+        display: none;
+        width: 100vw;
+        line-height: 70px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-list__link{
+        font-size: 1.6em;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+    }
+
+    .nav-list__mid-item{
+        display: none;
+        width: 100vw;
+        background: none;
+        clip-path: none;
+        line-height: 70px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #nav-check:checked ~ .nav-list{
+        height: 100vh;
+    }
+
+    #nav-check:checked ~ .nav-list li{
+        display: block;
+    }
+}
+
 .main-container{
     grid-area: main;
 }
@@ -218,9 +330,12 @@ body{
     font-family: 'Rubik', sans-serif;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
-    padding: 27px 0;
     width: 100%;
-    line-height: 150%;
+    height: 85%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
 
 .footer__span-0{
@@ -229,6 +344,7 @@ body{
 
 .footer__span-1{
     font-size: 80%;
+    padding: 10px 0;
 }
 
 .footer__work-w-us-btn{
@@ -254,7 +370,7 @@ footer button a{
     font-size: 1.3em;
     display: block;
     width: 100%;
-    padding: 0 10px;
+    margin: auto;
 }
 
 .footer__refund-text{
@@ -275,8 +391,15 @@ footer button a{
     }
 
     footer button{
-        width: 350px;
+        width: 70%;
     }
+}
+
+@media screen and (max-width: 768px){
+    footer button a{
+        font-size: 1em;
+    }
+
 }
 
 /* ---index--- */
@@ -288,12 +411,12 @@ footer button a{
     align-content: center;
 }
 
-.slider_news-container{
+/* .slider_news-container{
     width: 100%;
     margin: auto;
-    animation: slider 20s infinite alternate ease-in-out;
+    animation: slider 20s infinite alternate ease;
     margin-bottom: 0;
-}
+} */
 
 @keyframes slider{
     0%{margin-left: 0%;}
