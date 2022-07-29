@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>treizeTech</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/0269b0925a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header-container">
@@ -21,6 +22,13 @@
         <div class="rgb-bar"></div>
     </header>
     <nav class="nav-container">
+        <input type="checkbox" id="nav-check">
+            <label for="nav-check" class="nav-hamburguer__logo">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="../index.html" class="nav-home__logo">
+                <i class="fa-solid fa-house"></i>   
+            </a>
         <ul class="nav-list">
             <li class="nav-list__item"><a href="hardware.html" class="nav-list__link">Hardware</a></li>
             <li class="nav-list__item"><a href="perifericos.html" class="nav-list__link">Periféricos</a></li>
@@ -30,14 +38,14 @@
         </ul>
     </nav>
     <main class="main-container">
-        <div class="contact-box">
-            <p class="contact-text">Trabajá con nosotros!</p>
-            <form action="#" class="contact-form">
-                <input type="text" class="contact-form__first-name" required id="first-name" placeholder="Nombre">
-                <input type="text" class="contact-form__last-name" required id="last-name" placeholder="Apellido">
-                <input type="email" class="contact-form__email" required id="email" placeholder="Email">
-                <input type="number" class="contact-form__phone-number" required id="number" placeholder="Teléfono">
-                <select name="job-selector" id="job-selector" class="contact-form__job-selector" required>
+        <div class="w-w-us-container">
+            <form action="#" class="w-w-us-form">
+                <p class="w-w-us-tittle">Trabajá con nosotros!</p>
+                <input type="text" class="w-w-us-form__first-name" required id="first-name" placeholder="Nombre">
+                <input type="text" class="w-w-us-form__last-name" required id="last-name" placeholder="Apellido">
+                <input type="email" class="w-w-us-form__email" required id="email" placeholder="Email">
+                <input type="number" class="w-w-us-form__phone-number" required id="number" placeholder="Teléfono">
+                <select name="job-selector" id="job-selector" class="w-w-us-form__job-selector" required>
                     <option value="#">Seleccioná el puesto al que aspiras</option>
                     <option value="#">Creador de contenido audiovisual</option>
                     <option value="#">Diseñador gráfico</option>
@@ -49,22 +57,25 @@
                     <option value="#">Analista contable</option>
                     <option value="#">Supervisor de depósito</option>
                 </select>
-                <input type="file" class="contact-form__input-file" accept=".pdf" aria-label="Subí tu CV!" id="file-picker" name="file-picker">
-                <label for="file-picker" class="contact-form__input-label">Subí tu CV</label>
-                <button type="submit" class="contact-form__button-wwus">Enviar</button>
+                <input type="file" class="w-w-us-form__input-file" accept=".pdf" aria-label="Subí tu CV!" id="file-picker" name="file-picker">
+                <label for="file-picker" class="w-w-us-form__input-label">Subí tu CV</label>
+                <button type="submit" class="w-w-us-form__button-wwus">Enviar</button>
             </form>
         </div>
     </main>
-    <footer>
-        <div class="footer-box__left">
-            <button><a href="#" class="footer-box__refund-text">¡Botón de arrepentimiento!</a></button>
-        </div>
-        <div class="footer-box__mid">
-            <p><span class="footer-box__span-0">Todos los derechos reservados</span> <br> <span class="footer-box__span-1">2022</span> <br> treizeTech</p>
-        </div>
-        <div class="footer-box__right">
-            <button><a href="../pages/work-w-us.html" class="footer-box__work-w-us-text">¡Trabajá con nosotros!</a></button>
-        </div> 
+    <footer class="footer-container">
+        <button class="footer__refund-btn">
+            <a href="#" class="footer__refund-text">¡Botón de arrepentimiento!</a>
+        </button>
+        <p class="footer__mid-text">
+            <span class="footer-box__span-0">Todos los derechos reservados</span> <br> 
+            <span class="footer-box__span-1">2022</span>
+            <br> 
+            treizeTech
+        </p>
+        <button class="footer__work-w-us-btn">
+            <a href="../pages/work-w-us.html" class="footer__work-w-us-text">¡Trabajá con nosotros!</a>
+        </button>
     </footer>
 </body>
 </html>

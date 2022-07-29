@@ -947,6 +947,73 @@ footer button a{
 
 /* ---arma-tu-pc--- */
 
+.pc-build__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px auto auto;
+    grid-template-areas:
+        "pb-tittle pb-tittle"
+        "pb-text pb-text"
+        "pb-intel pb-amd";
+    background: #fff;
+    width: 80vw;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    margin: 80px auto;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.pc-build__tittle{
+    grid-area: pb-tittle;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.pc-build__text{
+    grid-area: pb-text;
+    font-family: 'Rubik', sans-serif;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 15px;
+    text-align: left;
+    display: block;
+}
+
+.pc-build__intel-logo{
+    grid-area: pb-intel;
+}
+
+.pc-build__amd-logo{
+    grid-area: pb-amd;
+}
+
+.pc-build__container a img{
+    width: 80%;
+    display: block;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1024px){
+    .pc-build__container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .pc-build__tittle{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .pc-build__container a img{
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+}
+
 /* ---sucursales--- */
 
 .sucursales-container{
@@ -1045,7 +1112,7 @@ footer button a{
 
 /* ---contacto--- */
 
-.contact-box{
+.contact-container{
     width: 80vw;
     height: 80vh;
     margin: 90px auto;
@@ -1152,7 +1219,7 @@ footer button a{
 }
 
 @media screen and (max-width: 1024px){
-    .contact-box{
+    .contact-container{
         height: auto;
     }
 
@@ -1208,3 +1275,169 @@ footer button a{
 }
 
 /* ---trabaja-con-nosotros--- */
+
+.w-w-us-container{
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    width: 80vw;
+    height: 80vh;
+    margin: 90px auto;
+    background: linear-gradient(0deg,#cc00ff 0%, #e7e7e7 50%);
+    border-radius: 0.8em;
+}
+
+.w-w-us-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "w-titte w-titte"
+        "w-first-name w-last-name"
+        "w-email w-phone"
+        "w-jobs w-jobs"
+        "w-label w-label"
+        "w-button w-button";
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.w-w-us-form > *{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.w-w-us-form > *:focus{
+    outline: none;
+}
+
+.w-w-us-tittle{
+    grid-area: w-titte;
+    font-size: 2em;
+    padding: 20px;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: .3s;
+}
+
+.w-w-us-form__first-name{
+    grid-area: w-first-name;
+}
+
+.w-w-us-form__last-name{
+    grid-area: w-last-name;
+}
+
+.w-w-us-form__email{
+    grid-area: w-email;
+}
+
+.w-w-us-form__phone-number{
+    grid-area: w-phone;
+}
+
+.w-w-us-form__job-selector{
+    grid-area: w-jobs;
+    width: 90%;
+    height: 5vh;
+    text-indent: 0.5rem;
+    border: 1px solid #cc00ff;
+    background: #fff;
+}
+
+.w-w-us-form__input-file{
+    display: none;
+}
+
+.w-w-us-form__input-label{
+    grid-area: w-label;
+    width: 20vw;
+    background: #fff;
+    text-align: center;
+    line-height: 5vh;
+    border: 1px solid #cc00ff;
+}
+
+.w-w-us-form__button-wwus{
+    grid-area: w-button;
+    width: 20vw;
+    height: 5vh;
+    border: 2px solid #000;
+    background-image: linear-gradient(45deg, #000 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    border-radius: 2.5vh;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    transition: all .9s;
+    font-size: 1.2em;
+}
+
+.w-w-us-form__button-wwus:hover{
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    background-position: 0;
+    color: white;
+}
+
+.w-w-us-form__first-name, .w-w-us-form__last-name, .w-w-us-form__email,.w-w-us-form__phone-number{
+    width: 80%;
+    height: 5vh;
+    text-indent: 0.5rem;
+    background: #fff;
+    border: 1px solid #cc00ff
+}
+
+@media screen and (max-width: 1024px){
+    .w-w-us-container{
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .w-w-us-form{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+
+    .w-w-us-form__first-name, .w-w-us-form__last-name, .w-w-us-form__email, .w-w-us-form__phone-number, .w-w-us-form__job-selector{
+        width: 80%;
+    }
+
+    .w-w-us-form__first-name, .w-w-us-form__last-name, .w-w-us-form__email, .w-w-us-form__phone-number, .w-w-us-form__job-selector{
+        height: 53px;
+    }
+    
+    .w-w-us-form__input-label{
+        width: 40vw;
+        line-height: 53px;
+    }
+
+    .w-w-us-form__button-wwus{
+        margin-bottom: 40px;
+        width: 35vw;
+        height: 7vh;
+        border-radius: 3.5vh;
+    }
+
+    .w-w-us-form__job-selector{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .w-w-us-text{
+        font-size: 1.4em;
+    }
+
+    .w-w-us-form__first-name, .w-w-us-form__last-name, .w-w-us-form__email, .w-w-us-form__phone-number, .w-w-us-form__job-selector{
+        height: 73px;
+    }
+
+
+    .w-w-us-form__button-wwus{
+        width: 40vw;
+        height: 10vh;
+        border-radius: 5vh;
+    }
+}
