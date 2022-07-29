@@ -146,8 +146,8 @@ body{
     .header-container{
         grid-template-rows: auto auto 4px;
         grid-template-areas: 
-        "social-login social-login social-login"
         "bar bar bar"
+        "social-login social-login social-login"
         "rgb rgb rgb";
         align-content: center;
         justify-content: center;
@@ -273,6 +273,14 @@ body{
         line-height: 70px;
         text-align: center;
         padding: 20px 0;
+    }
+
+    .nav-list li{
+        border-top: 1px solid rgba(143, 143, 143, 0.5);
+    }
+
+    .nav-list li:last-child{
+        border-bottom: 1px solid rgba(143, 143, 143, 0.5);
     }
 
     .nav-list__link{
@@ -407,8 +415,6 @@ footer button a{
 .index-container{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
 }
 
 /* .slider_news-container{
@@ -459,7 +465,7 @@ footer button a{
 }
 
 .prod-container, .last-prod-container{
-    width: 70%;
+    width: 80%;
     height: 350px;
     margin: 0 auto 50px auto;
 }
@@ -475,17 +481,17 @@ footer button a{
 .slider-prod, .slider-last-prod{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 100%;
     overflow: hidden;
 }
 
 .prod__card{
     position: absolute;
     width: 100%;
-    height: 350px;
+    height: 100%;
     display: grid;
     grid-template-columns: 320px 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
         "prod-img prod-tittle prod-tittle"
         "prod-img prod-old-price ."
@@ -503,12 +509,14 @@ footer button a{
     justify-self: center;
 }
 
-.prod__card h6{
+.prod__tittle {
     grid-area: prod-tittle;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 3em;
-    padding: 20px 0 0 10px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 15px;
 }
 
 .prod__price{
@@ -540,9 +548,12 @@ footer button a{
     grid-area: view-button;
     align-self: end;
     justify-self: end;
-    content: url('https://api.iconify.design/healthicons/eye-negative.svg');
-    height: 80px;
-    width: 80px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
 }
 
 .selectors{
@@ -682,13 +693,13 @@ footer button a{
 
 .categories-container{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "processor processor ssd ssd monitor ram"
-        "processor processor case case monitor ram"
-        "vid-amd vid-nvidia case case power-supply power-supply"
-        "vid-amd vid-nvidia motherboard motherboard cleaning cleaning";
+        "processor ssd monitor"
+        "processor vid-amd ram"
+        "case vid-amd vid-nvidia"
+        "power-supply motherboard vid-nvidia";
     width: 80%;
     height: 700px;
     margin: auto;
@@ -757,15 +768,10 @@ footer button a{
     grid-area: power-supply;
 }
 
-.categories__cleaning{
-    grid-area: cleaning;
-}
-
 .brands-container{
     width: 100%;
     height: 160px;
     margin: 0 auto 80px auto;
-    position: relative;
     overflow: hidden;
 }
 
@@ -775,7 +781,7 @@ footer button a{
     align-items: center;
     width: calc(250px * 26);
     height: 100%;
-    animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .brands__slider div{
@@ -784,7 +790,6 @@ footer button a{
     border-radius: 50%;
     margin: 0 50px;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-
     background-color: white;
 }
 
@@ -794,6 +799,148 @@ footer button a{
     100%{transform: translateX(calc(-250px * 13));}
 }
 
+@media screen and (max-width: 1024px){
+    .prod-container, .last-prod-container{
+        width: 90%;
+        height: 400px;
+    }
+
+    .selectors{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .selector{
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+    }
+
+    .categories-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        width: 90%;
+        height: 100%;
+        grid-template-areas:
+            "processor processor"
+            "ssd monitor"
+            "vid-amd vid-amd"
+            "case ram"
+            "vid-nvidia vid-nvidia"
+            "power-supply motherboard";   
+    }
+
+    .brands-container{
+        height: 150px;
+    }
+    
+    .brands__slider{
+        width: calc(180px * 26);
+        animation: scroll-r 30s linear infinite;
+    }
+    
+    .brands__slider div{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 0 25px;
+
+    }
+
+    @keyframes scroll-r{
+        0%{transform: translateX(0);}
+    
+        100%{transform: translateX(calc(-150px * 13));}
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .prod-container, .last-prod-container{
+        height: 500px;
+    }
+    
+    .prod__card{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "prod-tittle"
+            "prod-img"
+            "prod-price"
+            "view-button";
+    }
+
+    .prod__old-price{
+        display: none;
+    }
+
+    .prod__card img{
+        width: 250px;
+    }
+
+    .prod__tittle{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .prod__price{
+        font-size: 1.8em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .prod__old-price{
+        font-size: 1em;
+        margin: 0;
+        text-align: center;
+    }
+
+    .selectors{
+        width: 90%;
+    }
+
+    .categories-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 200px);
+        width: 80%;
+        height: 100%;
+        grid-template-areas:
+            "processor"
+            "ssd"
+            "monitor"
+            "vid-amd"
+            "vid-nvidia"
+            "case"
+            "ram"
+            "power-supply"
+            "motherboard";   
+    }
+
+    .brands-container{
+        height: 120px;
+    }
+    
+    .brands__slider{
+        width: calc(140px * 26);
+        animation: scroll-r-r 30s linear infinite;
+    }
+    
+    .brands__slider div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 20px;
+
+    }
+
+    @keyframes scroll-r-r{
+        0%{transform: translateX(0);}
+    
+        100%{transform: translateX(calc(-140px * 13));}
+    }
+
+}
+
 /* ---hardware--- */
 
 /* ---perifericos--- */
@@ -801,6 +948,100 @@ footer button a{
 /* ---arma-tu-pc--- */
 
 /* ---sucursales--- */
+
+.sucursales-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas:
+        "locations-tittle locations-tittle"
+        "first-box second-box"
+        "third-box fourth-box";
+    align-items: center;
+    justify-items: center;
+    width: 80vw;
+    height: auto;
+    margin: 50px auto;    
+}
+
+.sucursales-container div{
+    margin: 33px;
+}
+
+.locations__tittle{
+    grid-area: locations-tittle;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.locations__subtittle{
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.locations__first-box{
+    grid-area: first-box;
+}
+
+.locations__second-box{
+    grid-area: second-box;
+}
+
+.locations__third-box{
+    grid-area: third-box;
+    text-align: center;
+}
+
+.locations-fourth-box{
+    grid-area: fourth-box;
+}
+
+.locations__iframe-maps{
+    border: none;
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    border-radius: .8em;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .sucursales-container{
+        width: 90vw;
+    }
+
+    .locations__iframe-maps{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sucursales-container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .locations__iframe-maps{
+        width: 80vw;
+    }
+
+    .locations__tittle{
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .locations__subtittle{
+        font-size: 1.2rem;  
+    }
+}
+
+
 
 /* ---contacto--- */
 
@@ -851,7 +1092,7 @@ footer button a{
     animation-delay: .3s;
 }
 
-@-webkit-keyframes tracking-in-expand {
+@keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
       opacity: 0;
@@ -862,19 +1103,7 @@ footer button a{
     100% {
       opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}
 
 .contact-form__first-name{
     grid-area: first-name;
@@ -920,6 +1149,62 @@ footer button a{
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
     background-position: 0;
     color: white;
+}
+
+@media screen and (max-width: 1024px){
+    .contact-box{
+        height: auto;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .contact-text{
+        margin-top: 20px;
+    }
+
+    .contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number, .contact-form__msj-box{
+        width: 80%;
+    }
+
+    .contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number{
+        height: 53px;
+    }
+
+    .contact-form__msj-box{
+        height: 212px;
+    }
+
+    .contact-form__button{
+        margin-bottom: 40px;
+        width: 35vw;
+        height: 7vh;
+        border-radius: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-text{
+        font-size: 1.4em;
+    }
+
+    .contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number{
+        height: 73px;
+    }
+
+    .contact-form__msj-box{
+        height: 292px;
+    }
+
+    .contact-form__button{
+        width: 40vw;
+        height: 10vh;
+        border-radius: 5vh;
+    }
 }
 
 /* ---trabaja-con-nosotros--- */
