@@ -943,6 +943,22 @@ footer button a{
 
 /* ---hardware--- */
 
+.hardware-container{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main-nav prods";
+}
+
+.nav-submenu{
+    grid-area: main-nav;
+}
+
+.all-items-container{
+    grid-area: prods;
+}
+
 /* ---perifericos--- */
 
 /* ---arma-tu-pc--- */
