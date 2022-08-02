@@ -943,7 +943,7 @@ footer button a{
 
 /* ---hardware--- */
 
-.hardware-container{
+.hardware-container, .peripherals-container{
     display: flex;
     flex-flow: row nowrap;
 }
@@ -1010,7 +1010,7 @@ footer button a{
     margin: auto;
     display: flex;
     flex-flow: column nowrap;
-    
+    margin-top: 33px;
 }
 
 .product-list__tittle-container{
@@ -1048,13 +1048,43 @@ footer button a{
 }
 
 .product-list__card{
-    background-color: lightgreen;
+    background: #fff;
     width: 330px;
-    height: 430px;
+    height: 480px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin: 30px 0;
+    margin: 30px 20px;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.product-list__photo{
+    width: 300px;
+    max-width: 300px;
+}
+
+.product-list__info__price{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-list__info__item-name{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.product-list__buy-button{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 33px;
+    background: #cc00ff;
+    border: none;
+    cursor: pointer;
 }
 
 
