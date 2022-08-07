@@ -11,30 +11,376 @@
 </head>
 <body>
     <header>
-       <div class="container-fluid">
+       <div class="container-fluid" id="header__container">
             <div class="row">
-                <div class="col-lg-3 col-3 bg-primary">
-                    <img src="./media/main-logo.png" alt="" class="img-fluid py-2">
+                <div class="col-3 align-items-center justify-content-center">
+                    <img src="./media/main-logo.png" alt="" class="img-fluid py-2 my-3">
                 </div>
-                <div class="col-lg-6 col-9 d-flex align-items-center justify-content-center bg-secondary">
-                    <div class="input-group w-75">
-                        <input type="text" class="form-control" placeholder="Buscar productos..." aria-describedby="find-button">
-                        <button class="btn btn-primary" type="submit">Button</button>
-                    </div>
+                <div class="col-lg-6 col-9 d-flex align-items-center justify-content-center">
+                    <nav class="navbar w-75" id="header__search-nav-bar">
+                        <div class="container-fluid">
+                          <form class="d-flex w-100">
+                            <input class="header__bar" type="search" placeholder="Buscar productos..." aria-label="Buscar productos..." >
+                            <button class="header__search-btn" type="submit" id="search-btn">
+                                <a href="#">
+                                  <span style="color: #FFF">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                  </span>
+                                </a>
+                            </button>
+                          </form>
+                        </div>
+                      </nav>
                 </div>
-                <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center bg-success">
+                <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center">
                     <div class="d-flex justify-content-between w-50">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-whatsapp"></i>
-                        <i class="fas fa-user"></i>
-                        <i class="fas fa-shopping-cart"></i>
+                          <span>
+                            <a href="">
+                              <i class="fab fa-instagram fa-xl"  style="color: #FFF;"></i>
+                            </a>
+                          </span>
+                          <span>
+                            <a href="">
+                              <i class="fab fa-twitter fa-xl" style="color: #FFF;"></i>
+                            </a>
+                          </span>
+                          <span>
+                            <a href="">
+                              <i class="fab fa-whatsapp fa-xl" style="color: #FFF;"></i>
+                            </a>
+                          </span>
+                          <span>
+                            <a href="">
+                              <i class="fas fa-user fa-xl" style="color: #FFF;"></i>
+                            </a>
+                          </span>
+                          <span>
+                            <a href="">
+                              <i class="fas fa-shopping-cart fa-xl" style="color: #FFF;"></i>
+                            </a>
+                          </span>
                     </div>
                 </div>
             </div>
-       </div> 
+            <div class="row">
+                <div class="rgb-bar"></div>
+           </div>
+       </div>
+       <nav class="navbar navbar-expand-lg p-0" id="header__nav-bar">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100 d-flex flex-nowrap m-1">
+              <a class="nav-link flex-fill text-center p-2" href="#">Hardware</a>
+              <a class="nav-link flex-fill text-center p-2" href="#">Periféricos</a>
+              <a class="nav-link flex-fill text-center p-2" href="#">Arma tu PC</a>
+              <a class="nav-link flex-fill text-center p-2" href="#">Sucursales</a>
+              <a class="nav-link flex-fill text-center p-2" href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+
+    <main class="d-flex flex-column flex-nowrap" id="main-container">
+      <div id="carousel-news" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./media/slider-news-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/slider-news-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/slider-news-3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/slider-news-4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/slider-news-5.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-news" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-news" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h5>PRODUCTOS DESTACADOS</h5>
+      <div class="prod-container">
+        <div id="carousel-prod" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="carousel-prod__indicators">
+            <button type="button" data-bs-target="#carousel-prod" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-prod" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-prod" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-prod" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel-prod" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active" style="transition: transform 1s ease;">
+
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-prod" data-bs-slide="prev" id="prod__prev-arrow">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-prod" data-bs-slide="next" id="prod__next-arrow">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <h5>ÚLTIMOS INGRESOS</h5>
+      <div class="prod-container">
+        <div id="carousel-last-prod" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="carousel-prod__indicators">
+            <button type="button" data-bs-target="#carousel-last-prod" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-last-prod" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-last-prod" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-last-prod" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel-last-prod" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active" style="transition: transform 1s ease;">
+
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="transition: transform 1s ease;">
+                <div class="prod__card">
+                  <img src="https://picsum.photos/id/2/300/300" alt="">
+                  <h6 class="prod__tittle">Nombre del producto Nombre del producto</h6>
+                  <div class="prod__price">$33333333 
+                    <span class="badge">10% OFF</span>
+                  </div>
+                  <a href="#">Ver producto</a>
+                </div>
+              </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-last-prod" data-bs-slide="prev" id="prod__prev-arrow">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-last-prod" data-bs-slide="next" id="prod__next-arrow">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <h5>CATEGORÍAS</h5>
+            <div class="categories-container">
+                <div class="categories__processor">
+                    <img src="" alt="">
+                    <h6>Procesadores</h6>
+                    <a href="#">Ver productos</a>
+                </div>
+                <div class="categories__ssd">
+                    <img src="" alt="">
+                    <h6>Discos SSD</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__monitor">
+                    <img src="" alt="">
+                    <h6>Monitores</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__ram">
+                    <img src="" alt="">
+                    <h6>Memorias RAM</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__vid-amd">
+                    <img src="" alt="">
+                    <h6>Placas de video AMD</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__vid-nvidia">
+                    <img src="" alt="">
+                    <h6>Placas de video Nvidia</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__case">
+                    <img src="" alt="">
+                    <h6>Gabinetes</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__motherboard">
+                    <img src="" alt="">
+                    <h6>Motherboards</h6>
+                    <a href="">Ver productos</a>
+                </div>
+                <div class="categories__power-supply">
+                    <img src="" alt="">
+                    <h6>Fuentes de alimentación</h6>
+                    <a href="">Ver productos</a>
+                </div>
+            </div>
+
+            <h5>ENCONTRÁ TU MARCA PREFERIDA</h5>
+            <div class="brands-container">
+                <div class="brands__slider">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- copy -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>  
+            </div>
+        </div>
+
+    </main>
     
+    <footer>
+      <div class="container-fluid" id="footer-container">
+        <a href="#" class="footer__refund-text">
+          ¡Botón de arrepentimiento!
+        </a>
+        <p class="footer__mid-text">
+          <span class="footer__span-0">
+            Todos los derechos reservados
+          </span> 
+          <span class="footer__span-1">
+            2022
+          </span>
+            treizeTech
+        </p>
+        <a href="../pages/work-w-us.html" class="footer__work-w-us-text">¡Trabajá con nosotros!</a>
+
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
