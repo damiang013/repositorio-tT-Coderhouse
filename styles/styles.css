@@ -22,6 +22,10 @@ body{
     background: #262626;
 }
 
+.header__responsive-logo{
+    display: none;
+}
+
 .header__bar{
     width: 75%;
     height: 33px;
@@ -49,7 +53,7 @@ body{
 .rgb-bar{
     background: linear-gradient(45deg, rgb(255,0,0) 0%, rgb(255,0,255) 18%, rgb(0,0,255) 30%, rgb(0,255,255) 45%, rgb(0,255,0) 65%, rgb(255,255,0) 80%, rgb(255, 123, 0) 90%, rgb(255,0,0) 100%);
     background-size: 400% 400%;
-    animation: rgb-bar 8s linear infinite;
+    animation: rgb-bar 15s linear infinite;
     height: 4px;
 }
 
@@ -71,19 +75,91 @@ body{
     color: #fff;
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
-    border-right: 1px solid #4b4b4b; 
     font-size: 1.2em;  
-}
-
-#header__nav-bar div a:last-child{
-    border: none;
 }
 
 #header__nav-bar div a:hover{
     background: rgb(44, 44, 44);
     transition: background .3s;
-    border: none;
-    outline: 1px solid #000;
+}
+
+.social-login__container{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    #main-logo{
+        display: none;
+    }
+
+    .header__responsive-logo{
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #main-social-login{
+        display: none !important;
+    }
+
+    .social-login__container{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    #header__search-nav-bar{
+        width: 100% !important;
+    }
+
+    #header__nav-bar{
+        height: 4em;
+        width: 100vw;
+        z-index: 100000;  
+    }
+
+    #header__nav-bar div button{
+        background: url('https://api.iconify.design/fontisto/nav-icon-a.svg?color=white') no-repeat center center / contain;
+        margin-left: 1em;
+    }
+
+    #navbar-responsive{
+        background: rgba(0,0,0,0.93);
+        position: absolute;
+        top: 4em;
+        width: 100vw;
+        height: auto;
+        z-index: 100000;
+        transition: all .5s linear;
+    }
+
+    #navbar-responsive a{
+        width: 93%;
+        font-size: 1.8em !important;
+        padding: 15px 0 !important;
+        margin: 5px auto;
+        background: rgba(63, 63, 63, 0.5);
+    }
+
+    #navbar-responsive a:last-child{
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header__responsive-logo{
+        width: 100%;
+    }
+
+    .header__bar{
+        width: 85%;
+    }
+
+    #responsive-social-login{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
 }
 
 /* ====footer==== */
@@ -191,6 +267,13 @@ body{
     }
 }
 
+@media screen and (max-width: 576px){
+    footer button a{
+        font-size: 1em;
+    }
+
+}
+
 /* ====index==== */
 
 #main-container h5{
@@ -207,7 +290,7 @@ body{
 
 .prod-container, .last-prod-container{
     width: 80%;
-    height: 350px;
+    height: auto;
     margin: 0 auto 50px auto;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
     border: 1px solid #000;
@@ -222,14 +305,14 @@ body{
 }
 
 #carousel-prod__indicators{
-    top: 370px;
+    top: 110%;
     height: 15px;
     margin: 0;
 }
 
 .prod__card{
     width: 100%;
-    height: 350px;
+    height: auto;
     display: grid;
     grid-template-columns: 320px 1fr 1fr;
     grid-template-rows: repeat(3, auto);
@@ -261,18 +344,28 @@ body{
 
 .prod__price{
     grid-area: prod-price;
+    position: relative;
+    margin-left: 25px;
+}
+
+.prod__price h4{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 2.2em;
+    margin: 0;
+    padding: 0;
     text-align: start;
-    margin-left: 20px;
     display: block;
-    align-self: center;
+    position: relative;
 }
 
 .prod__card .badge{
     background: #00b309;
     font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1em;
 }
 
 .prod__card a{
@@ -305,11 +398,11 @@ body{
 }
 
 #prod__prev-arrow{
-    left: -12%; 
+    left: -6%; 
 }
 
 #prod__next-arrow{
-    right: -12%;
+    right: -6%;
 }
 
 .categories-container{
@@ -419,4 +512,148 @@ body{
     0%{transform: translateX(0);}
 
     100%{transform: translateX(calc(-250px * 13));}
+}
+
+@media screen and (max-width: 992px){
+    .prod-container, .last-prod-container{
+        width: 90%;
+    }
+
+    #carousel-prod__indicators{
+        height: 15px;
+    }
+
+    #carousel-prod__indicators button{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 20px;
+        border: none;
+    }
+
+    .categories-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        width: 90%;
+        height: 100%;
+        grid-template-areas:
+            "processor processor"
+            "ssd monitor"
+            "vid-amd vid-amd"
+            "case ram"
+            "vid-nvidia vid-nvidia"
+            "power-supply motherboard";   
+    }
+
+    .brands-container{
+        height: 150px;
+    }
+    
+    .brands__slider{
+        width: calc(180px * 26);
+        animation: scroll-r 30s linear infinite;
+    }
+    
+    .brands__slider div{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 0 25px;
+
+    }
+
+    @keyframes scroll-r{
+        0%{transform: translateX(0);}
+    
+        100%{transform: translateX(calc(-150px * 13));}
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .prod__card{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "prod-tittle"
+            "prod-img"
+            "prod-price"
+            "view-button";
+        height: auto;
+    }
+    
+
+    #carousel-prod__indicators{
+        height: 20px;
+        justify-content: space-around;
+    }
+
+    #carousel-prod__indicators button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0;
+        border: none;
+    }
+
+    .prod__card img{
+        width: 250px;
+    }
+
+    .prod__tittle{
+        font-size: 2em;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .prod__price{
+        font-size: 1.3em;
+        margin-left: 0;
+        justify-self: center;
+    }
+
+    .prod__card a{
+        margin: 20px 10px 10px 0;
+    }
+
+    .categories-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 200px);
+        width: 80%;
+        height: 100%;
+        grid-template-areas:
+            "processor"
+            "ssd"
+            "monitor"
+            "vid-amd"
+            "vid-nvidia"
+            "case"
+            "ram"
+            "power-supply"
+            "motherboard";   
+    }
+
+    .brands-container{
+        height: 120px;
+    }
+    
+    .brands__slider{
+        width: calc(140px * 26);
+        animation: scroll-r-r 30s linear infinite;
+    }
+    
+    .brands__slider div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 20px;
+
+    }
+
+    @keyframes scroll-r-r{
+        0%{transform: translateX(0);}
+    
+        100%{transform: translateX(calc(-140px * 13));}
+    }
+
 }
