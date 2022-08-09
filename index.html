@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>treizeTech-test</title>
+    <title>treizeTech</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/0269b0925a.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,11 +23,9 @@
                           <form class="d-flex w-100 justify-content-center">
                             <input class="header__bar" type="search" placeholder="Buscar productos..." aria-label="Buscar productos..." >
                             <button class="header__search-btn" type="submit" id="search-btn">
-                                <a href="#">
-                                  <span style="color: #FFF">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                  </span>
-                                </a>
+                                <span style="color: #FFF">
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
                             </button>
                           </form>
                         </div>
@@ -36,27 +34,27 @@
                 <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center" id="main-social-login">
                     <div class="d-flex justify-content-around w-100 mx-5 my-3">
                       <span>
-                        <a href="">
+                        <a href="https://www.instagram.com/" target="_blank">
                           <i class="fab fa-instagram fa-xl"  style="color: #FFF;"></i>
                         </a>
                       </span>
                       <span>
-                        <a href="">
+                        <a href="https://twitter.com/home" target="_blank">
                           <i class="fab fa-twitter fa-xl" style="color: #FFF;"></i>
                         </a>
                       </span>
                       <span>
-                        <a href="">
+                        <a href="./pages/error-page.html" target="_blank">
                           <i class="fab fa-whatsapp fa-xl" style="color: #FFF;"></i>
                         </a>
                       </span>
                       <span>
-                        <a href="">
+                        <a href="./pages/error-page.html" target="_blank">
                           <i class="fas fa-user fa-xl" style="color: #FFF;"></i>
                         </a>
                       </span>
                       <span>
-                        <a href="">
+                        <a href="./pages/error-page.html" target="_blank">
                           <i class="fas fa-shopping-cart fa-xl" style="color: #FFF;"></i>
                         </a>
                       </span>
@@ -76,27 +74,27 @@
             <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center">
               <div class="d-flex justify-content-around w-100 mx-5 my-3" id="responsive-social-login">
                 <span>
-                  <a href="">
+                  <a href="https://www.instagram.com/" target="_blank">
                     <i class="fab fa-instagram fa-xl"  style="color: #FFF;"></i>
                   </a>
                 </span>
                 <span>
-                  <a href="">
+                  <a href="https://twitter.com/home" target="_blank">
                     <i class="fab fa-twitter fa-xl" style="color: #FFF;"></i>
                   </a>
                 </span>
                 <span>
-                  <a href="">
+                  <a href="./pages/error-page.html" target="_blank">
                     <i class="fab fa-whatsapp fa-xl" style="color: #FFF;"></i>
                   </a>
                 </span>
                 <span>
-                  <a href="">
+                  <a href="./pages/error-page.html" target="_blank">
                     <i class="fas fa-user fa-xl" style="color: #FFF;"></i>
                   </a>
                 </span>
                 <span>
-                  <a href="">
+                  <a href="./pages/error-page.html" target="_blank">
                     <i class="fas fa-shopping-cart fa-xl" style="color: #FFF;"></i>
                   </a>
                 </span>
@@ -105,18 +103,18 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-responsive">
             <div class="navbar-nav w-100 d-flex flex-nowrap m-1">
-              <a class="nav-link flex-fill text-center p-0" href="#">Hardware</a>
-              <a class="nav-link flex-fill text-center p-0" href="#">Periféricos</a>
-              <a class="nav-link flex-fill text-center p-0" href="#">Arma tu PC</a>
-              <a class="nav-link flex-fill text-center p-0" href="#">Sucursales</a>
-              <a class="nav-link flex-fill text-center p-0" href="#">Contacto</a>
+              <a class="nav-link flex-fill text-center p-0" id="nav-link" href="./pages/hardware.html">Hardware</a>
+              <a class="nav-link flex-fill text-center p-0" id="nav-link" href="./pages/perifericos.html">Periféricos</a>
+              <a class="nav-link flex-fill text-center p-0" href="./pages/arma-tu-pc.html" id="navbar-mid-button">Arma tu PC</a>
+              <a class="nav-link flex-fill text-center p-0" id="nav-link" href="./pages/sucursales.html">Sucursales</a>
+              <a class="nav-link flex-fill text-center p-0" id="nav-link" href="./pages/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main class="d-flex flex-column flex-nowrap" id="main-container">
+    <main class="d-flex flex-column flex-nowrap" id="index-container">
       <div id="carousel-news" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -126,19 +124,19 @@
           <button type="button" data-bs-target="#carousel-news" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" style="transition: transform 1s ease;">
             <img src="./media/slider-news-1.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="transition: transform 1s ease;">
             <img src="./media/slider-news-2.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="transition: transform 1s ease;">
             <img src="./media/slider-news-3.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="transition: transform 1s ease;">
             <img src="./media/slider-news-4.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="transition: transform 1s ease;">
             <img src="./media/slider-news-5.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -408,8 +406,7 @@
           </span>
             treizeTech
         </p>
-        <a href="../pages/work-w-us.html" class="footer__work-w-us-text">¡Trabajá con nosotros!</a>
-
+        <a href="./pages/work-w-us.html" class="footer__work-w-us-text">¡Trabajá con nosotros!</a>
       </div>
     </footer>
 
