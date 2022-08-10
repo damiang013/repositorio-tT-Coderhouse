@@ -23,7 +23,10 @@ body{
 }
 
 :root{
-    --main-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
+    --main-box-shadow: 1px 1px rgb(40, 0, 63), 2px 2px rgb(68, 0, 100), 3px 3px rgb(126, 17, 189), 4px 4px rgb(155, 1, 216), 5px 5px rgb(223, 14, 223), 6px 6px rgb(225, 0, 255), 7px 7px rgb(212, 0, 255), 8px 8px rgb(204, 0, 255);
+    --main-black-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
+    --main-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(139,0,186,0.8169642857142857) 100%);
+    --main-color-background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
     --secondary-box-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -315,7 +318,7 @@ body{
     padding: 15px 30px;
     margin: 0 33px;
     border: 1px solid #000;
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--main-black-box-shadow);
 }
 
 .error-page__text{
@@ -324,7 +327,7 @@ body{
     margin: 33px;
     padding: 15px 10px;
     border: 1px solid #000;
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--main-black-box-shadow);
 }
 
 .error-page__img{
@@ -333,7 +336,7 @@ body{
     padding: 33px;
     background: #fff;
     border: 1px solid #000;
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--main-black-box-shadow);
 }
 
 @media screen and (max-width: 576px){
@@ -359,6 +362,18 @@ body{
     text-align: center;
     font-size: 1.2em;
     margin: 80px 0 10px 0;
+}
+
+#carousel-news__indicators button{
+    width: 60px;
+    height: 5px;
+    margin: 0 10px;
+}
+
+#news__arrow{
+    width: auto;
+    background: #000;
+    opacity: 1;
 }
 
 .prod-indicators{
@@ -438,11 +453,7 @@ body{
 
 .prod__card .badge{
     background: #00b309;
-    font-size: 1.3rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 1em;
+    font-size: .6em;
 }
 
 .prod__card a{
@@ -454,8 +465,9 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border: 1px solid #000;
+    background: var(--main-color-background);
 }
 
 .prod__card a:hover{
@@ -502,8 +514,11 @@ body{
     padding: 10px;
     text-align: center;
     transition: all .3s;
-    background: #fff;
     box-shadow: var(--secondary-box-shadow);
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
 }
 
 .categories-container > div:hover{
@@ -522,6 +537,10 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #6c0090;
     text-decoration: none;
+}
+
+.categories-container h6, .categories-container a{
+    position: relative;
 }
 
 .categories__processor{
@@ -558,6 +577,16 @@ body{
 
 .categories__power-supply{
     grid-area: power-supply;
+}
+
+.categories-container img{
+    position: absolute;
+    opacity: 0.7;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .brands-container{
@@ -685,8 +714,8 @@ body{
 
     .prod__price{
         font-size: 1.3em;
-        margin-left: 0;
-        justify-self: center;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .prod__card a{
@@ -746,12 +775,19 @@ body{
 }
 
 #navbar-tittle{
-    background: #fff;
-    color: #000;
+    background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
+    color: #fff;
     margin-bottom: 20px;
     padding: 10px 0 !important;
     box-shadow: var(--main-box-shadow);
-    border: 1px solid #000;
+}
+
+#responsive-navbar-tittle{
+    background: var(--main-color-background);
+}
+
+#responsive-navbar-tittle h2{
+    color: #fff;
 }
 
 #main-navbar h2{
@@ -765,7 +801,7 @@ body{
     font-family: 'Rubik', sans-serif;
     font-size: 0.8em;
     text-align: center;
-    color: #4b4b4b;
+    color: #cccccc;
 }
 
 #main-navbar ul{
@@ -777,12 +813,12 @@ body{
     width: 100%;
 }
 
-#main-navbar a{
+#main-navbar li a{
     color: #000;
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
     font-size: 1.2em;
-
+    border-bottom: 1px solid #000;
 }
 
 #navbar-style{
@@ -799,17 +835,24 @@ body{
     border-radius: none;
 }
 
+#navbar-dropend-style li{
+    background: #000 !important;
+    border-bottom: 1px solid #fff;
+}
+
+#navbar-dropend-style li a{
+    color: #fff;
+}
 
 #prods-container h3{
     font-size: 1.6em;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    border: 1px solid #000;
     text-align: center;
     box-shadow: var(--main-box-shadow);
     margin: 30px 0;
     padding: 0.4em 0;
-    background: #fff;
+    background: var(--main-background);
 }
 
 #prods-container h3:first-child{
