@@ -116,99 +116,2565 @@
 
     <main class="d-grid">
         <div class="row">
-            <div class="col-12 col-lg-2">
-                <nav class="nav navbar-expand-lg bg-dark" id="">
-                    <div class="container-fluid">
+            <div class="col-12 col-lg-3">
+                <nav class="nav navbar-expand-lg bg-dark position-sticky d-flex flex-column" id="main-navbar">
+                    <div class="container-fluid p-0" id="navbar-tittle">
+                      <h2>Hardware</h2>
+                    </div>
+                    <div class="container-fluid p-0">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#items-navbar" aria-controls="items-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                          <h2>Hardware</h2>
+                          <h6>(categorias)</h6>
                         </button>
                       <div class="collapse navbar-collapse" id="items-navbar">
-                          <ul class="navbar-nav flex-column">
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          <ul class="navbar-nav flex-column" id="navbar-style">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Almacenamiento</a>
+                              <ul class="dropdown-menu p-0" id="navbar-dropend-style">
+                                <li><a class="dropdown-item" href="#hw-discos-solidos">Discos sólidos</a></li>
+                                <li><a class="dropdown-item" href="#hw-discos-rigidos">Discos rígidos</a></li>
+                                <li><a class="dropdown-item" href="#hw-dicos-externos">Discos externos</a></li>
+                                <li><a class="dropdown-item" href="#hw-pendrives-y-memorias-sd">Pendrives y memorias SD</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Procesadores</a>
+                              <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item" href="#hw-procesadores-intel">Intel</a></li>
+                                <li><a class="dropdown-item" href="#hw-procesadores-amd">AMD</a></li>
+                                <li><a class="dropdown-item" href="#hw-coolers-procesador">Coolers</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Motherboards</a>
+                              <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item" href="#hw-motherboards-intel">Intel</a></li>
+                                <li><a class="dropdown-item" href="#hw-motherboards-amd">AMD</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Memorias RAM</a>
+                              <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item" href="#hw-ram-ddr4">DDR4</a></li>
+                                <li><a class="dropdown-item" href="#hw-ram-ddr5">DDR5</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Placas de video</a>
+                              <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item" href="#hw-placas-de-video-amd">AMD</a></li>
+                                <li><a class="dropdown-item" href="#hw-placas-de-video-nvidia">Nvidia</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item dropend">
-                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accesorios</a>
+                              <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item" href="#hw-pasta-termica">Pasta térmica</a></li>
+                                <li><a class="dropdown-item" href="#hw-cables">Cables</a></li>
+                                <li><a class="dropdown-item" href="#hw-butacas">Butacas</a></li>
+                                <li><a class="dropdown-item" href="#hw-placas-de-red">Placas de red</a></li>
+                                <li><a class="dropdown-item" href="#hw-limpieza">Limpieza</a></li>
                               </ul>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-fuentes">Fuentes</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-gabinetes">Gabinetes</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-coolers">Coolers</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-estabilizadores-y-ups">Estabilizadores y UPS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-monitores">Monitores</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
+                              <a class="nav-link" href="#hw-equipos-pre-armados">Equipos pre-armados</a>
                             </li>
                           </ul>
                       </div>
                     </div>
                 </nav>
             </div>
-            <div class="col-12 col-lg-10">
-                
+            <div class="col-12 col-lg-9" id="prods-container">
+                <h3 id="hw-discos-solidos">Discos sólidos</h3>
+                <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+                <h3 id="hw-discos-rigidos">Discos rígidos</h3>
+
+                <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                <h3 id="hw-dicos-externos">Discos externos</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-pendrives-y-memorias-sd">Pendrives y memorias SD</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-procesadores-intel">Procesadores Intel</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-procesadores-amd">Procesadores AMD</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-coolers-procesador">Coolers para el procesador</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-motherboards-intel">Motherboards Intel</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-motherboards-amd">Motherboards AMD</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-ram-ddr4">RAM DDR4</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-ram-ddr5">RAM DDR5</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-placas-de-video-amd">Placas de video AMD</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-placas-de-video-nvidia">Placas de video Nvidia</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-pasta-termica">Pasta térmica</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-cables">Cables</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-butacas">Butacas</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-placas-de-red">Placas de red</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-limpieza">Limpieza</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-fuentes">Fuentes</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-gabinetes">Gabinetes</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-coolers">Coolers</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-estabilizadores-y-ups">Estabilizadores y UPS</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-monitores">Monitores</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <h3 id="hw-equipos-pre-armados">Equipos pre-armados</h3>
+                  <div class="d-grid">
+
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card" id="item-card">
+                        <img src="https://picsum.photos/id/2/300/300" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                          <h4 class="card-title">Nombre del producto Nombre del producto</h4>
+                          <h5 class="card-tittle">
+                            $3333333333 <span class="badge bg-secondary">10% OFF</span>
+                          </h5>
+                          <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <a href="" class="btn bg-dark" style="color: #fff;">X</a>
+                            <a href="" class="btn bg-dark" style="color: #fff;">O</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
             </div>
         </div>
     </main>
