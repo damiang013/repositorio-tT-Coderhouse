@@ -23,11 +23,12 @@ body{
 }
 
 :root{
-    --main-box-shadow: 1px 1px rgb(40, 0, 63), 2px 2px rgb(68, 0, 100), 3px 3px rgb(126, 17, 189), 4px 4px rgb(155, 1, 216), 5px 5px rgb(223, 14, 223), 6px 6px rgb(225, 0, 255), 7px 7px rgb(212, 0, 255), 8px 8px rgb(204, 0, 255);
-    --main-black-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
-    --main-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(139,0,186,0.8169642857142857) 100%);
-    --main-color-background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
+    --color-box-shadow: 1px 1px rgb(40, 0, 63), 2px 2px rgb(68, 0, 100), 3px 3px rgb(126, 17, 189), 4px 4px rgb(155, 1, 216), 5px 5px rgb(223, 14, 223), 6px 6px rgb(225, 0, 255), 7px 7px rgb(212, 0, 255), 8px 8px rgb(204, 0, 255);
+    --black-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
+    --white-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(139,0,186,0.8169642857142857) 100%);
+    --color-background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
     --secondary-box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    --color-border: 1px solid #cc00ff;
 }
 
 /* ====header==== */
@@ -384,8 +385,7 @@ body{
     width: 80%;
     height: auto;
     margin: 0 auto 50px auto;
-    box-shadow: var(--main-box-shadow);
-    border: 1px solid #000;
+    border: var(--color-border);
 }
 
 #carousel-prod__indicators button{
@@ -467,12 +467,12 @@ body{
     text-decoration: none;
     color: #fff;
     border: 1px solid #000;
-    background: var(--main-color-background);
+    background: var(--color-background);
 }
 
 .prod__card a:hover{
     animation: shadow-btn 0.2s ease-in both;
-    color: #000;
+    color: #fff;
 }
 
 @keyframes shadow-btn {
@@ -481,7 +481,7 @@ body{
         transform: translateX(0) translateY(0);
       }
       100% {
-        box-shadow: var(--main-box-shadow);
+        box-shadow: var(--color-box-shadow);
         transform: translateX(-8px) translateY(-8px);
       }
 }
@@ -775,15 +775,15 @@ body{
 }
 
 #navbar-tittle{
-    background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
+    background: var(--color-background);
     color: #fff;
     margin-bottom: 20px;
     padding: 10px 0 !important;
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--black-box-shadow);
 }
 
 #responsive-navbar-tittle{
-    background: var(--main-color-background);
+    background: var(--color-background);
 }
 
 #responsive-navbar-tittle h2{
@@ -811,6 +811,7 @@ body{
 #main-navbar ul li{
     background: #fff;
     width: 100%;
+    background: #262626;
 }
 
 #main-navbar li a{
@@ -818,12 +819,20 @@ body{
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
     font-size: 1.2em;
-    border-bottom: 1px solid #000;
+    border-bottom: var(--color-border);
+    color: white;
+}
+
+#last-item{
+    border-bottom: none !important;
 }
 
 #navbar-style{
-    box-shadow: var(--main-box-shadow);
-    border: 1px solid #000;
+    border: var(--color-border);
+}
+
+#hw-equipos-pre-armados, #pf-parlantes{
+    border-bottom: none;
 }
 
 #prods-container{
@@ -836,12 +845,18 @@ body{
 }
 
 #navbar-dropend-style li{
-    background: #000 !important;
-    border-bottom: 1px solid #fff;
+    background: linear-gradient(90deg, rgba(151,0,186,1) 50%, rgba(0,0,0,1) 100%) !important;
+    overflow-x: hidden;
+}
+
+#navbar-dropend-style li a:hover, #navbar-dropend-style li a:focus{
+    background: #530162 !important;
 }
 
 #navbar-dropend-style li a{
     color: #fff;
+    border-bottom: var(--color-border);
+    padding-left: 13% !important;
 }
 
 #prods-container h3{
@@ -849,10 +864,9 @@ body{
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     text-align: center;
-    box-shadow: var(--main-box-shadow);
     margin: 30px 0;
     padding: 0.4em 0;
-    background: var(--main-background);
+    text-decoration: solid #530162;
 }
 
 #prods-container h3:first-child{
