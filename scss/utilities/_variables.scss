@@ -1,0 +1,41 @@
+/* ==font== */
+$main-font: 'Rubik', sans-serif;
+$sec-font: 'Roboto', sans-serif;
+
+$fs-xs: 0.8em;
+$fs-s: 1em;
+$fs-m: 1.2em;
+$fs-l:1.8em;
+$fs-xl:2.4em;
+$fs-xxl:3em;
+
+$fw-6: 600;
+$fw-3: 300;
+
+/* ==color== */
+$dark-gray: #262626;
+$cool-green: #00b309;
+$main-purple: #530162;
+
+/* ==utilities== */
+$random-size: 33px;
+$w-80: 80%;
+
+/* ==border== */
+$border-w: 1px solid #fff;
+$border-b: 1px solid #000;
+$border-p: 1px solid #cc00ff;
+
+$border-r-s: .25rem;
+$border-r-m: 0.8rem;
+$border-r-l: 50%;
+
+/* ==shadow== */
+$basic-box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+$bold-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 8px 8px #000;
+
+/* ==background== */
+$bg-fullsize: 100% 100%;
+$bg-black: #000000;
+$w-purple-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(139,0,186,0.8169642857142857) 100%);
+$b-purple-background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);

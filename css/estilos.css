@@ -31,279 +31,6 @@ body{
     --color-border: 1px solid #cc00ff;
 }
 
-/* ====header==== */
-
-#header__container{
-    background: #262626;
-}
-
-.header__responsive-logo{
-    display: none;
-}
-
-.header__bar{
-    width: 75%;
-    height: 33px;
-    border: 1px solid white;
-    border-radius: 5px;
-    text-indent: 10px;
-}
-
-.header__bar:focus{
-    outline: none;
-}
-
-
-.header__search-btn{
-    width: 33px;
-    height: 33px;
-    margin-left: 1%;
-    border: none;
-    border-radius: 5px;
-    background-image: linear-gradient(45deg, #530162 0%, #8b23ce 50%, #c825f4 100%);
-    background-size: 100% 100%;
-}
-
-
-.rgb-bar{
-    background: linear-gradient(45deg, rgb(255,0,0) 0%, rgb(255,0,255) 18%, rgb(0,0,255) 30%, rgb(0,255,255) 45%, rgb(0,255,0) 65%, rgb(255,255,0) 80%, rgb(255, 123, 0) 90%, rgb(255,0,0) 100%);
-    background-size: 400% 400%;
-    animation: rgb-bar 15s linear infinite;
-    height: 4px;
-}
-
-@keyframes rgb-bar {
-    0%{
-        background-position: 400% 0%;
-    }
-
-    100%{
-        background-position: 0% 400%;
-    }
-}
-
-#header__nav-bar{
-    background: #000;
-}
-
-#nav-link{
-    color: #fff;
-    font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-    font-size: 1.2em;  
-}
-
-#nav-link:hover{
-    background: rgb(44, 44, 44);
-    transition: background .3s;
-}
-
-#navbar-mid-button{
-    background: radial-gradient(circle farthest-side at center center, #530162 0%, #8b23ce 50%, #c825f4 100%);
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-    transition: transform .4s;
-    color: #fff;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.2em;
-}
-
-#navbar-mid-button:hover{
-    transform: scale(1.2);
-}
-
-.social-login__container{
-    display: none;
-}
-
-@media screen and (max-width: 992px){
-    #main-logo{
-        display: none;
-    }
-
-    .header__responsive-logo{
-        display: block;
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    #main-social-login{
-        display: none !important;
-    }
-
-    .social-login__container{
-        display: block;
-        width: 90%;
-        margin: auto;
-    }
-
-    #header__search-nav-bar{
-        width: 100% !important;
-    }
-
-    #header__nav-bar{
-        height: 4em;
-        width: 100vw;
-        z-index: 100000;  
-    }
-
-    #header__nav-bar div button{
-        background: url('https://api.iconify.design/fontisto/nav-icon-a.svg?color=white') no-repeat center center / contain;
-        margin-left: 1em;
-    }
-
-  
-
-    #navbar-responsive{
-        background: rgba(0,0,0,0.93);
-        position: absolute;
-        top: 4em;
-        width: 100vw;
-        height: auto;
-        z-index: 100000;
-        transition: all .5s linear;
-    }
-
-    #navbar-responsive a{
-        width: 93%;
-        font-size: 1.8em !important;
-        padding: 15px 0 !important;
-        margin: 5px auto;
-        background: rgba(63, 63, 63, 0.5);
-    }
-
-    #navbar-responsive a:last-child{
-        margin-bottom: 33px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .header__responsive-logo{
-        width: 100%;
-    }
-
-    .header__bar{
-        width: 85%;
-    }
-
-    #responsive-social-login{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-}
-
-/* ====footer==== */
-
-#footer-container{
-    background: linear-gradient(45deg,rgba(0,0,0,0.9) 10%, #6c0090 40%, #b600a8 70%, #fbc4e9 100%);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-        "refund mid-text work"
-        "refund mid-text work";
-    justify-items: center;
-    align-items: center;
-}
-
-.footer__refund-text{
-    grid-area: refund;
-    color: #ff0000;
-    display: block;
-}
-
-.footer__refund-text:hover{
-    color: #ff0000;
-}
-
-.footer__work-w-us-text{
-    grid-area: work;
-    color: #fff;
-    display: block;
-}
-
-.footer__work-w-us-text:hover{
-    color: #fff;
-}
-
-.footer__refund-text, .footer__work-w-us-text{
-    width: 22vw;
-    background: #000;
-    position: relative;
-    display: block;
-    padding: 15px 0;
-    margin: 2.5rem auto;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1em;
-    border: 2px solid #4b4b4b;
-}
-
-.footer__refund-text:hover, .footer__work-w-us-text:hover{
-    border: 2px solid #fff;
-    text-decoration: underline;
-    transition: border .3s;
-}
-
-.footer__mid-text{
-    grid-area: mid-text;
-    text-align: center;
-    color: #fff;
-    font-size: 1em;
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.footer__span-0{
-    font-weight: 600;
-    display: block;
-}
-
-.footer__span-1{
-    font-size: 80%;
-    padding: 10px 0; 
-    display: block;
-}
-
-@media screen and (max-width: 992px){
-    #footer-container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "refund mid-text"
-            "work mid-text";
-        row-gap: 20px
-    }
-
-    .footer__refund-text{
-        margin: 20px 0 0 0;
-    }
-
-    .footer__work-w-us-text{
-        margin: 0 0 20px 0;
-    }
-
-    .footer__refund-text, .footer__work-w-us-text{
-        width: 80%;
-        line-height: 1em;
-    }
-    
-    .footer__mid-text{
-        border-right: none;
-    }
-}
-
-@media screen and (max-width: 576px){
-    footer button a{
-        font-size: 1em;
-    }
-
-}
-
 /* ====error-page==== */
 
 #error-page-container{
@@ -338,21 +65,6 @@ body{
     background: #fff;
     border: 1px solid #000;
     box-shadow: var(--main-black-box-shadow);
-}
-
-@media screen and (max-width: 576px){
-    .error-page__tittle{
-        font-size: 2em;
-        padding: 10px;
-    }
-
-    .error-page__text{
-        font-size: 1em;
-    }
-
-    .error-page__img{
-        width: 300px;
-    }
 }
 
 /* ====index==== */
@@ -475,16 +187,6 @@ body{
     color: #fff;
 }
 
-@keyframes shadow-btn {
-    0% {
-        box-shadow: 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000;
-        transform: translateX(0) translateY(0);
-      }
-      100% {
-        box-shadow: var(--color-box-shadow);
-        transform: translateX(-8px) translateY(-8px);
-      }
-}
 
 #prod__prev-arrow{
     left: -6%; 
@@ -614,155 +316,7 @@ body{
     background-color: white;
 }
 
-@keyframes scroll{
-    0%{transform: translateX(0);}
 
-    100%{transform: translateX(calc(-250px * 13));}
-}
-
-@media screen and (max-width: 992px){
-    .prod-container, .last-prod-container{
-        width: 90%;
-    }
-
-    #carousel-prod__indicators{
-        height: 15px;
-    }
-
-    #carousel-prod__indicators button{
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin: 0 20px;
-        border: none;
-    }
-
-    .categories-container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 200px);
-        width: 90%;
-        height: 100%;
-        grid-template-areas:
-            "processor processor"
-            "ssd monitor"
-            "vid-amd vid-amd"
-            "case ram"
-            "vid-nvidia vid-nvidia"
-            "power-supply motherboard";   
-    }
-
-    .brands-container{
-        height: 150px;
-    }
-    
-    .brands__slider{
-        width: calc(180px * 26);
-        animation: scroll-r 30s linear infinite;
-    }
-    
-    .brands__slider div{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        margin: 0 25px;
-
-    }
-
-    @keyframes scroll-r{
-        0%{transform: translateX(0);}
-    
-        100%{transform: translateX(calc(-150px * 13));}
-    }
-
-}
-
-@media screen and (max-width: 768px){
-    .prod__card{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            "prod-tittle"
-            "prod-img"
-            "prod-price"
-            "view-button";
-        height: auto;
-    }
-    
-
-    #carousel-prod__indicators{
-        height: 20px;
-        justify-content: space-around;
-    }
-
-    #carousel-prod__indicators button{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin: 0;
-        border: none;
-    }
-
-    .prod__card img{
-        width: 250px;
-    }
-
-    .prod__tittle{
-        font-size: 2em;
-        text-align: center;
-        margin: 15px 0;
-    }
-
-    .prod__price{
-        font-size: 1.3em;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .prod__card a{
-        margin: 20px 10px 10px 0;
-    }
-
-    .categories-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 200px);
-        width: 80%;
-        height: 100%;
-        grid-template-areas:
-            "processor"
-            "ssd"
-            "monitor"
-            "vid-amd"
-            "vid-nvidia"
-            "case"
-            "ram"
-            "power-supply"
-            "motherboard";   
-    }
-
-    .brands-container{
-        height: 120px;
-    }
-    
-    .brands__slider{
-        width: calc(140px * 26);
-        animation: scroll-r-r 30s linear infinite;
-    }
-    
-    .brands__slider div{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 0 20px;
-
-    }
-
-    @keyframes scroll-r-r{
-        0%{transform: translateX(0);}
-    
-        100%{transform: translateX(calc(-140px * 13));}
-    }
-
-}
 
 /* ====hardware-y-perifericos==== */
 
@@ -898,45 +452,6 @@ body{
     background: #00b309 !important;
 }
 
-@media screen and (max-width: 992px){
-    #main-navbar{
-        margin: 40px auto 0 auto;
-        width: 40%;
-        border: 1px solid #000;
-        box-shadow: var(--main-box-shadow);
-        background: #fff !important;    
-    }
-
-    #main-navbar button{
-        display: block;
-        width: 100%;
-        height: auto;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 600;
-        font-size: 1.3em;
-        border-radius: 0;
-        border-bottom: 1px solid #000;
-    }
-
-    #main-navbar button:focus{
-        box-shadow: none;
-    }
-
-    #navbar-style{
-        border: none;
-    } 
-
-    #navbar-tittle{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 576px){
-    #main-navbar{
-        width: 75%;
-    }
-}
-
 /* ====arma-tu-pc==== */
 
 #arma-tu-pc-container{
@@ -973,24 +488,6 @@ body{
     margin: 15px auto;
 }
 
-@media screen and (max-width: 576px){
-    #arma-tu-pc-container h4{
-        font-size: 1.8em;
-        margin-bottom: 20px;
-    }
-
-    #arma-tu-pc-container p{
-        font-size: .8em;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    #arma-tu-pc-container img{
-        width: 100%;
-        margin: 5px auto;
-    }
-}
-
 /* ====sucursales==== */
 
 #sucursales-container{
@@ -1025,17 +522,7 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 992px){ 
-    #sucursales-container iframe{
-        width: 70vw;
-        height: 50vh;
-    }
 
-    #sucursales-container h6{
-        font-size: 1.1em;
-    }
-
-}
 
 /* ====contacto==== */
 
@@ -1073,18 +560,7 @@ body{
     font-weight: 300;
 }
 
-@keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-}
+
 
 #form-container form input{
     height: 3em;
@@ -1101,16 +577,7 @@ body{
     font-weight: 600;
 }
 
-@media screen and (max-width: 576px){
-    #form-container form h4{
-        font-size: 1.6em;
-        margin: 10px 0;
-    }
 
-    #form-container form button{
-        width: 30%;
-    }
-}
 
 /* ====work-w-us==== */
 

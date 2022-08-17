@@ -1,0 +1,70 @@
+#header__container{
+    background: $dark-gray;
+}
+
+.header__responsive-logo{
+    display: none;
+}
+
+#header__search-bar{
+    input{
+        width: $w-80;
+        height: $random-size;
+        border: $border-w;
+        border-radius: $border-r-s;
+        text-indent: 10px;
+            &:focus{
+            outline: none;
+            }
+    }
+    button{
+        width: $random-size;
+        height: $random-size;
+        margin-left: 1%;
+        border: none;
+        border-radius: $border-r-s;
+        background-image: linear-gradient(45deg, #530162 0%, #8b23ce 50%, #c825f4 100%);
+        background-size: $bg-fullsize;
+    }
+}
+
+.social-login__container{
+    display: none;
+}
+
+.rgb-bar{
+    background: linear-gradient(45deg, rgb(255,0,0) 0%, rgb(255,0,255) 18%, rgb(0,0,255) 30%, rgb(0,255,255) 45%, rgb(0,255,0) 65%, rgb(255,255,0) 80%, rgb(255, 123, 0) 90%, rgb(255,0,0) 100%);
+    background-size: 400% 400%;
+    animation: rgb-bar 15s linear infinite;
+    height: 4px;
+}
+
+#header__nav-bar{
+    background: $bg-black;
+}
+
+#navbar-responsive{
+    div{
+        a{
+            color: #fff;
+            font-family: $main-font;
+            text-decoration: none;
+            font-size: $fs-m;
+                &:hover{
+                background: rgb(44, 44, 44);
+                }
+        }
+        
+        #navbar-mid-button{
+            background: radial-gradient(circle farthest-side at center center, #530162 0%, #8b23ce 50%, #c825f4 100%);
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+            transition: transform .4s;
+            color: #fff;
+            font-family: $main-font;
+            font-size: $fs-m;
+                &:hover{
+                    transform: scale(1.2);
+                }
+        }
+    }
+}

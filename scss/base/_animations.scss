@@ -1,0 +1,51 @@
+@keyframes rgb-bar {
+    0%{
+        background-position: 400% 0%;
+    }
+
+    100%{
+        background-position: 0% 400%;
+    }
+}
+
+@keyframes shadow-btn {
+    0% {
+        box-shadow: 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000, 0 0 #000;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        box-shadow: $bold-box-shadow;
+        transform: translateX(-8px) translateY(-8px);
+    }
+}
+
+@keyframes scroll{
+    0%{transform: translateX(0);}
+
+    100%{transform: translateX(calc(-250px * 13));}
+}
+
+@keyframes scroll-r{
+    0%{transform: translateX(0);}
+
+    100%{transform: translateX(calc(-150px * 13));}
+}
+
+@keyframes scroll-r-r{
+    0%{transform: translateX(0);}
+
+    100%{transform: translateX(calc(-140px * 13));}
+}
+
+@keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+}

@@ -1,0 +1,22 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+
+@import './base/reset';
+@import './base/typo';
+@import './base/animations';
+
+
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './views/index';
+@import './views/arma-tu-pc';
+@import './views/contacto';
+@import './views/error-page';
+@import './views/hardware';
+@import './views/perifericos';
+@import './views/sucursales';
+@import './views/work-w-us';
+
+@import './base/mediaquerys';

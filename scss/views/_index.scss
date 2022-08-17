@@ -1,0 +1,228 @@
+#index-container h5{
+    font-family: $sec-font;
+    font-weight: $fw-6;
+    text-align: center;
+    font-size: $fs-m;
+    margin: 80px 0 10px 0;
+}
+
+#carousel-news__indicators{
+    button{
+        width: 60px;
+        height: 5px;
+        margin: 0 10px;
+    }
+}
+
+#news__arrow{
+    width: auto;
+    background: $bg-black;
+    opacity: 1;
+}
+
+.prod-indicators{
+    top: 200px;
+}
+
+.prod-container, .last-prod-container{
+    @include index-prods-containers-style
+}
+
+#carousel-prod__indicators{
+    top: 110%;
+    height: 15px;
+    margin: 0;
+        button{
+            width: 13px;
+            height: 13px;
+            border-radius: $border-r-l;
+            margin: 0 5px;
+            border: none;
+        }
+}
+
+.prod__card{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 320px 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "prod-img prod-tittle prod-tittle"
+        "prod-img prod-price prod-price"
+        "prod-img . view-button";
+    transition: all .5s ease;
+    background: #fff;
+        img{
+            grid-area: prod-img;
+            max-width: 100%;
+            width: 300px;
+            align-self: center;
+            justify-self: center;
+        }
+        h6{
+            grid-area: prod-tittle;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 3em;
+            align-self: center;
+            padding-left: 15px;
+            text-align: start;
+        }
+        div{
+            grid-area: prod-price;
+            position: relative;
+            margin-left: 25px;
+                h4{
+                    font-family: $sec-font;
+                    font-size: $fs-xl;
+                    font-weight: $fw-3;
+                    margin: 0;
+                    padding: 0;
+                    text-align: start;
+                    display: block;
+                    position: relative;
+                        .badge{
+                            background: $cool-green;
+                            font-size: $fs-xs;
+                        }
+                }
+        }
+        a{
+            grid-area: view-button;
+            align-self: end;
+            justify-self: end;
+            padding: 15px;
+            margin: 0 30px 30px 0;
+            font-family: $sec-font;
+            font-size: $fs-m;
+            text-decoration: none;
+            color: #fff;
+            border: $border-b;
+            background: $b-purple-background;
+                &:hover{
+                    animation: shadow-btn 0.2s ease-in both;
+                    color: #fff;
+                }
+        }
+}
+
+#prod__prev-arrow{
+    left: -6%; 
+}
+
+#prod__next-arrow{
+    right: -6%;
+}
+
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "processor ssd monitor"
+        "processor vid-amd ram"
+        "case vid-amd vid-nvidia"
+        "power-supply motherboard vid-nvidia";
+    width: $w-80;
+    height: 700px;
+    margin: auto;
+    gap: 15px;
+        div{
+            border-radius: $border-r-m;
+            padding: 10px;
+            text-align: center;
+            transform: all .3s;
+            box-shadow: $basic-box-shadow;
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: end;
+                &:hover{
+                    animation: shadow-btn 0.2s ease-in both;
+                    border: $border-b;
+                }
+                img{
+                    opacity: 0.7;
+                    max-width: 90%;
+                    max-height: 90%;
+                    @include pos-center;
+                }
+                h6{
+                    font-family: $sec-font;
+                    color: #000;
+                    font-size: $fs-m;
+                    font-weight: $fw-6;
+                    position: relative;
+                }
+                a{
+                    font-family: $sec-font;
+                    color: $main-purple;
+                    text-decoration: none;
+                    position: relative;
+                }
+        }
+}
+
+.categories__processor{
+    grid-area: processor;
+}
+
+.categories__ssd{
+    grid-area: ssd;
+}
+
+.categories__monitor{
+    grid-area: monitor;
+}
+
+.categories__ram{
+    grid-area: ram;
+}
+
+.categories__vid-amd{
+    grid-area: vid-amd;
+}
+
+.categories__vid-nvidia{
+    grid-area: vid-nvidia;
+}
+
+.categories__case{
+    grid-area: case;
+}
+
+.categories__motherboard{
+    grid-area: motherboard;
+}
+
+.categories__power-supply{
+    grid-area: power-supply;
+}
+
+.brands-container{
+    width: 100%;
+    height: 160px;
+    margin: 0 auto 80px auto;
+    overflow: hidden;
+}
+
+.brands__slider{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: calc(250px * 26);
+    height: 100%;
+    animation: scroll 30s linear infinite;
+        div{
+            width: 150px;
+            height: 150px;
+            border-radius: $border-r-l;
+            margin: 0 50px;
+            box-shadow: $basic-box-shadow;
+            background: #fff;
+        }
+}
+
+
+
