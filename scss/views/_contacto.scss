@@ -1,0 +1,45 @@
+.form-container input:focus, .form-container textarea:focus, .form-container select:focus{
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.form-container{
+    width: $w-80;
+    height: auto;
+    margin: 90px auto;
+    background: linear-gradient(45deg,#cc00ff 0%, #e7e7e7 60%) !important;
+    box-shadow: $bold-box-shadow;
+    border: $border-b;
+        *>{
+            font-family: $main-font;
+            font-weight: $fw-6;
+        }
+        form{
+            h4{
+                font-size: $fs-l;
+                font-weight: $fw-6;
+                padding: 20px;
+                margin: 20px 0;
+                animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation-delay: .3s;
+            }
+            input{
+                height: 3em;
+            }
+            button{
+                width: 25%;
+                height: 2.5em;
+                display: block;
+                margin: auto;
+                border: $border-p;
+                border-radius: $border-r-s;
+                font-weight: $fw-6;
+                font-size: $fs-m;
+            }
+        }
+}
+
+#inputs-style{
+    border: $border-p;
+    border-radius: $border-r-s;
+}

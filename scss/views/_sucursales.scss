@@ -1,0 +1,28 @@
+#sucursales-container{
+    width: $w-80;
+        h4{
+            font-family: $main-font;
+            font-size: $fs-m;
+            padding: 15px 20px;
+            animation: shadow-btn .4s ease both;
+            animation-delay: 1s;
+            text-align: center;
+            background: #fff;
+            border: $border-b;
+            width: auto;
+            margin: auto;
+        }
+        iframe{
+            width: 30vw;
+            height: 40vh;
+            box-shadow: $basic-box-shadow;
+            border-radius: $border-r-m;
+            margin: 10px;
+        }
+        h6{
+            font-family: $main-font;
+            font-size: $fs-xs;
+            font-weight: $fw-6;
+            text-align: center;
+        }
+}

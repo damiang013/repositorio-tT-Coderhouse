@@ -1,0 +1,30 @@
+#arma-tu-pc-container{
+    background: #fff;
+    padding: $random-size 50px;
+    box-shadow: $basic-box-shadow;
+    width: $w-80;
+        h4{
+            font-family: $main-font;
+            font-size: $fs-xl;
+            font-weight: $fw-6;
+            text-transform: uppercase;
+            margin: 0 0 $random-size -1%;
+        }
+        p{
+            font-family: $main-font;
+            border: $border-b;
+            font-size: $fs-m;
+            padding: 20px 0 20px 15px;
+            margin: 10px auto 33px auto;
+            text-align: left;
+            display: block;
+            animation: shadow-btn .4s ease both;
+            animation-delay: 1s;
+        }
+        img{
+            width: 90%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+}

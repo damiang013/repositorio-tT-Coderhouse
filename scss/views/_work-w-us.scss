@@ -1,0 +1,19 @@
+.form-container{
+    select{
+        border: $border-p;
+            &:focus{
+                border: $border-p !important;
+            }
+    }
+    option{
+        background: $main-purple;
+        color: #fff;
+    }
+}
+
+/* ????==cambiar el color del option seleccionado==????  */
+
+#w-w-us-file-picker{
+    height: auto !important;
+    border: $border-p;
+}

@@ -1,0 +1,37 @@
+#prods-container{
+    padding: 40px 30px;
+    z-index: 4000;
+        h3{
+            font-size: $fs-l;
+            font-family: $main-font;
+            font-weight: $fw-6;
+            text-align: center;
+            margin: $random-size 0.4em;
+                &:first-child{
+                    margin-top: 0;
+                }
+        }
+}
+
+#item-card{
+    box-shadow: $basic-box-shadow;
+        h4{
+            font-size: $fs-m;
+            font-weight: $fw-3;
+            margin-bottom: 10px;
+            font-family: $sec-font;
+        }
+        h5{
+            font-size: $fs-m;
+            font-weight: $fw-6;
+            text-align: center;
+            margin: 20px 0;
+            font-family: $sec-font;
+        }
+        a{
+            font-family: $sec-font;
+        }
+        .badge{
+            background: $cool-green !important;
+        }
+}

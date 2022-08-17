@@ -1,0 +1,34 @@
+#error-page-container{
+    background-image: url(../media/technical-difficulties-bg.jpg);
+    background-size: 100% 100%;
+    padding: 33px 0;
+        h3{
+            font-size: $fs-xxl;
+            font-family: $main-font;
+            font-weight: $fw-6;
+            text-transform: uppercase;
+            background: #fff;
+            padding: 15px 30px;
+            margin: 0 33px;
+            border: $border-b;
+            box-shadow: $bold-box-shadow;
+        }
+        h5{
+            font-size: $fs-l;
+            font-family: $sec-font;
+            background: #fff;
+            margin: $random-size;
+            padding: 15px 10px;
+            border: $border-b;
+            box-shadow: $bold-box-shadow;
+        }
+        img{
+            width: 500px;
+            max-width: 100%;
+            padding: $random-size;
+            background: #fff;
+            border: $border-b;
+            box-shadow: $bold-box-shadow;
+        }
+
+}
