@@ -14,8 +14,12 @@ $fw-3: 300;
 
 /* ==color== */
 $dark-gray: #262626;
+$dark-gray-detail: #3d3d3d;
+$dark-gray-detail-d: #1d1d1d;
 $cool-green: #00b309;
 $main-purple: #530162;
+$main-purple-detail: #9401ad;
+$main-purple-detail-d: #3d0047;
 
 /* ==utilities== */
 $random-size: 33px;
@@ -40,3 +44,4 @@ $bg-fullsize: 100% 100%;
 $bg-black: #000000;
 $w-purple-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(139,0,186,0.8169642857142857) 100%);
 $b-purple-background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(189,0,228,1) 100%);
+$bg-transition: background .3s linear;

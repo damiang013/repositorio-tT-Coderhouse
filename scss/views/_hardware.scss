@@ -1,14 +1,29 @@
 #prods-container{
-    padding: 40px 30px;
+    padding: 0 30px 40px 30px;
     z-index: 4000;
         h3{
             font-size: $fs-l;
             font-family: $main-font;
             font-weight: $fw-6;
             text-align: center;
-            margin: $random-size 0.4em;
-                &:first-child{
-                    margin-top: 0;
+            margin: $random-size 0;
+            position: relative;
+            display: inline-block;
+                &::before, &::after{
+                    content: ' ';
+                    position: absolute;
+                    transform: translateY(-50%);
+                    border-top: 2px solid rgba(0, 0, 0, .4);
+                    top: calc(50% - 2px);
+                    width: 1000%;
+                }
+                &::before{
+                    right: 100%;
+                    margin-right: 10px;
+                }
+                &::after{
+                    left: 100%;
+                    margin-left: 10px;
                 }
         }
 }

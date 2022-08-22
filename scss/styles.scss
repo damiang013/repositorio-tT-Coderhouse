@@ -1,6 +1,9 @@
 @import './utilities/variables';
 @import './utilities/mixins';
 
+@import './components/go-up-btn.scss';
+@import './components/items-navbars';
+
 @import './base/reset';
 @import './base/typo';
 @import './base/animations';

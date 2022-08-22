@@ -169,7 +169,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
-            "prod-tittle"
+            "prod-title"
             "prod-img"
             "prod-price"
             "view-button";
@@ -270,7 +270,7 @@
         border: none;
     } 
 
-    #navbar-tittle{
+    #navbar-title{
         display: none;
     }
 }

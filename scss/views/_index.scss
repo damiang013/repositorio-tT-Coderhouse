@@ -48,7 +48,7 @@
     grid-template-columns: 320px 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "prod-img prod-tittle prod-tittle"
+        "prod-img prod-title prod-title"
         "prod-img prod-price prod-price"
         "prod-img . view-button";
     transition: all .5s ease;
@@ -61,7 +61,7 @@
             justify-self: center;
         }
         h6{
-            grid-area: prod-tittle;
+            grid-area: prod-title;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
             font-size: 3em;
