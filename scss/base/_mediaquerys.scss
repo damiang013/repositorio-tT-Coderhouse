@@ -245,6 +245,47 @@
 }
 
 @media screen and (max-width: 992px){
+    #items-navbar{
+        margin: 0;
+        width: 80%;
+        margin: auto;
+            #title-navbar{
+                display: none;
+            }
+            #navbar-toggler{
+                background: none !important;
+                button{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    margin: $random-size auto 0 auto;
+                    font-family: $main-font;
+                    font-weight: 600;
+                    background: map-get($color, gray-m);
+                    border: $border-p;
+                        h2{
+                            display: block;
+                            color: #fff;
+                        }
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                        }
+                }
+                #list-navbar{
+                    background: #000;
+                }
+                a{
+                    padding-left: 20px;
+                }
+            }
+    
+    }
+    
+    
+    
+    
+    
     #main-navbar{
         margin: 40px auto 0 auto;
         width: 40%;

@@ -47,6 +47,6 @@
             font-family: $sec-font;
         }
         .badge{
-            background: $cool-green !important;
+            background: map-get($color, green-m) !important;
         }
 }

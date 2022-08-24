@@ -31,8 +31,7 @@
                 height: 2.5em;
                 display: block;
                 margin: auto;
-                border: $border-p;
-                border-radius: $border-r-s;
+                @extend #inputs-style;
                 font-weight: $fw-6;
                 font-size: $fs-m;
             }

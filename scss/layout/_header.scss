@@ -1,5 +1,5 @@
 #header__container{
-    background: $dark-gray;
+    background: map-get($color, gray-m );
 }
 
 .header__responsive-logo{
@@ -40,7 +40,7 @@
 }
 
 #header__nav-bar{
-    background: $bg-black;
+    background: #000;
 }
 
 #navbar-responsive{

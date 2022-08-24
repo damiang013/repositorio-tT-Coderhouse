@@ -6,7 +6,7 @@
             }
     }
     option{
-        background: $main-purple;
+        background: map-get($color, purple-m);
         color: #fff;
     }
 }

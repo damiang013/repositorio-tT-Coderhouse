@@ -83,7 +83,7 @@
                     display: block;
                     position: relative;
                         .badge{
-                            background: $cool-green;
+                            background: map-get($color, green-m);
                             font-size: $fs-xs;
                         }
                 }
@@ -157,7 +157,7 @@
                 }
                 a{
                     font-family: $sec-font;
-                    color: $main-purple;
+                    color: map-get($color, purple-m);
                     text-decoration: none;
                     position: relative;
                 }

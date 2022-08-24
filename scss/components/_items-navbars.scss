@@ -9,10 +9,11 @@
     margin:40px 40px 0 20px;
     z-index: 5000;
         #navbar-toggler{
-            background: $dark-gray;
+            background: map-get($color, gray-m);
                 button{
                     h2{
-                        color: green;
+                        color: #fff;
+                        font-weight: $fw-3;
                     }
                     h6{
                         font-size: $fs-xs;
@@ -25,16 +26,16 @@
             font-weight: $fw-6;
             width: 100%;
             text-align: start;
-            border-bottom: 2px solid $main-purple;
+            border-bottom: 2px solid map-get($color, purple-m);
         }
         a{
             color: #fff;
             text-decoration: none;
             font-size: $fs-s;
-            border-bottom: 1px solid $dark-gray-detail;
+            border-bottom: 1px solid map-get($color, gray-m)-detail;
             transition: $bg-transition;
                 &:hover{
-                    background: $dark-gray-detail-d;
+                    background: map-get($color, gray-m)-detail-d;
                 }
                 &:last-child{
                     border: none;
@@ -49,10 +50,10 @@
             position: relative;
             border: none;
             padding: 0;
-            border-bottom: 1px solid $dark-gray-detail;
+            border-bottom: 1px solid map-get($color, gray-m)-detail;
                 li{
-                    background: $main-purple;
-                    border-bottom: 1px solid $main-purple-detail;
+                    background: map-get($color, purple-m);
+                    border-bottom: 1px solid map-get($color, purple-l);
                         &:last-child{
                             border-bottom: none;
                         }
@@ -60,10 +61,10 @@
                         color: #fff;
                         font-size: $fs-s;
                             &:active, &:focus{
-                                background: $main-purple-detail;
+                                background: map-get($color, purple-l);
                             }
                             &:hover{
-                                background: $main-purple-detail-d ;
+                                background: map-get($color, purple-d) ;
                             }
                     }
                 }

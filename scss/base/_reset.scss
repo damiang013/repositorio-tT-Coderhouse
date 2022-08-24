@@ -15,7 +15,7 @@ body{
 }
 
 *::selection{
-    background: $main-purple !important;
+    background: map-get($color, purple-m) !important;
     color: #fff;
     text-shadow: none;
 }

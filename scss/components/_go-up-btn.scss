@@ -8,7 +8,7 @@
     @include flex-center;
     z-index: 99999;
     text-decoration: none;
-    background: $main-purple;
+    background: map-get($color, purple-m);
         i{
             color: #fff;
         }
