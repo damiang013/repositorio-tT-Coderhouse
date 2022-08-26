@@ -570,7 +570,7 @@ body {
     margin: 20px 0;
     font-family: "Roboto", sans-serif; }
   #item-card a {
-    font-family: "Roboto", sans-serif; }
+    background: radial-gradient(circle, #530162 33%, #262626 80%); }
   #item-card .badge {
     background: #00b309 !important; }
 
@@ -612,6 +612,15 @@ body {
 #w-w-us-file-picker {
   height: auto !important;
   border: 1px solid #cc00ff; }
+
+#carousel-prod-viewer {
+  width: 90%; }
+
+#prod-info-container {
+  font-family: "Roboto", sans-serif; }
+  #prod-info-container h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.4em; }
 
 @media screen and (max-width: 992px) {
   #main-logo {

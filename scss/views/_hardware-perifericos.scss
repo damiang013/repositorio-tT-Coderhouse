@@ -44,7 +44,7 @@
             font-family: $sec-font;
         }
         a{
-            font-family: $sec-font;
+            background: radial-gradient(circle, rgba(83,1,98,1) 33%, rgba(38,38,38,1) 80%);
         }
         .badge{
             background: map-get($color, green-m) !important;
