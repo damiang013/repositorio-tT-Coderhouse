@@ -32,10 +32,10 @@
             color: #fff;
             text-decoration: none;
             font-size: $fs-s;
-            border-bottom: 1px solid map-get($color, gray-m)-detail;
+            border-bottom: 1px solid map-get($color, gray-l);
             transition: $bg-transition;
                 &:hover{
-                    background: map-get($color, gray-m)-detail-d;
+                    background: map-get($color, gray-d);
                 }
                 &:last-child{
                     border: none;
@@ -50,7 +50,7 @@
             position: relative;
             border: none;
             padding: 0;
-            border-bottom: 1px solid map-get($color, gray-m)-detail;
+            border-bottom: 1px solid map-get($color, gray-l);
                 li{
                     background: map-get($color, purple-m);
                     border-bottom: 1px solid map-get($color, purple-l);

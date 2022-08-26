@@ -14,10 +14,14 @@
     }
 }
 
-#news__arrow{
+#news__arrow-next{
     width: auto;
     background: $bg-black;
     opacity: 1;
+}
+
+#news__arrow-prev{
+    @extend #news__arrow-next;
 }
 
 .prod-indicators{

@@ -42,10 +42,10 @@
     color: #fff;
     text-decoration: none;
     font-size: 1em;
-    border-bottom: 1px solid #262626 -detail;
+    border-bottom: 1px solid #3d3d3d;
     transition: background 0.3s linear; }
     #items-navbar a:hover {
-      background: #262626 -detail-d; }
+      background: #1d1d1d; }
     #items-navbar a:last-child {
       border: none; }
   #items-navbar .dropdown-toggle::after {
@@ -56,7 +56,7 @@
     position: relative;
     border: none;
     padding: 0;
-    border-bottom: 1px solid #262626 -detail; }
+    border-bottom: 1px solid #3d3d3d; }
     #items-navbar ul li {
       background: #530162;
       border-bottom: 1px solid #9401ad; }
@@ -263,7 +263,7 @@ body {
   height: 5px;
   margin: 0 10px; }
 
-#news__arrow {
+#news__arrow-next, #news__arrow-prev {
   width: auto;
   background: #000000;
   opacity: 1; }
@@ -497,7 +497,7 @@ body {
     font-weight: 600;
     font-size: 1.2em; }
 
-#inputs-style, .form-container form button {
+#inputs-style, .form-container form button, #prod-info-container #prod-button-container button {
   border: 1px solid #cc00ff;
   border-radius: 0.25rem; }
 
@@ -614,13 +614,45 @@ body {
   border: 1px solid #cc00ff; }
 
 #carousel-prod-viewer {
-  width: 90%; }
+  width: 70%;
+  margin: auto; }
+  #carousel-prod-viewer #carousel-prod-viewer__button button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #530162; }
+  #carousel-prod-viewer #carousel-prod-viewer__prev {
+    left: -13%;
+    color: #000; }
+  #carousel-prod-viewer #carousel-prod-viewer__next {
+    right: -13%; }
 
 #prod-info-container {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em; }
   #prod-info-container h2 {
     font-family: "Rubik", sans-serif;
-    font-size: 2.4em; }
+    font-size: 2.4em;
+    border-bottom: 2px solid #530162; }
+  #prod-info-container #prod-price-container p {
+    border-bottom: 1px solid #3d3d3d;
+    margin-top: 6px; }
+    #prod-info-container #prod-price-container p span {
+      opacity: .5; }
+  #prod-info-container #prod-service-container {
+    margin: 25px 0; }
+    #prod-info-container #prod-service-container p {
+      font-size: 0.8em;
+      color: #00b309; }
+  #prod-info-container #prod-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #prod-info-container #prod-button-container button {
+      font-size: 0.8em; }
+      #prod-info-container #prod-button-container button a {
+        color: #000;
+        text-decoration: none; }
 
 @media screen and (max-width: 992px) {
   #main-logo {

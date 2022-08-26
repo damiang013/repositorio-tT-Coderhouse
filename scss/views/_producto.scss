@@ -1,11 +1,56 @@
 #carousel-prod-viewer{
-    width: 90%;
+    width: 70%;
+    margin: auto;
+        #carousel-prod-viewer__button{
+            button{
+                width: 13px;
+                height: 13px;
+                border-radius: $border-r-l;
+                background-color: map-get($color , purple-m);
+            }
+        }
+        #carousel-prod-viewer__prev{
+            left: -13%;
+            color: #000;
+        }
+        #carousel-prod-viewer__next{
+            right: -13%;
+        }
 }
 
 #prod-info-container{
     font-family: $sec-font;
+    font-size: $fs-l;
         h2{
             font-family: $main-font;
             font-size: $fs-xl;
+            border-bottom: 2px solid map-get($color, purple-m)
+        }
+        #prod-price-container{
+            p{
+                border-bottom: 1px solid map-get($color, gray-l);
+                margin-top: 6px;
+                    span{
+                        opacity: .5;
+                    }
+            }
+        }
+        #prod-service-container{
+            margin: 25px 0;
+                p{
+                    font-size: $fs-xs;
+                    color: map-get($color, green-m);
+                }
+        }
+        #prod-button-container{
+            @include flex-center;  
+                button{
+                    @extend #inputs-style;
+                    font-size: $fs-xs;
+                        a{
+                            color: #000;
+                            text-decoration: none;
+                        }
+                }
         }
 }

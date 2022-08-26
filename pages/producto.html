@@ -119,9 +119,9 @@
 
     <main class="container-fluid d-grid my-5">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-4">
                 <div id="carousel-prod-viewer" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators d-flex align-items-center">
+                    <div class="carousel-indicators d-flex align-items-center justify-content-around mx-0 position-absolute top-100 mt-3" id="carousel-prod-viewer__button">
                         <button type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -129,63 +129,69 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="transition: transform 1s ease;">
-                            <img src="https://picsum.photos/id/2/300/300" class="d-block w-100" alt="...">
+                            <img src="https://picsum.photos/id/2/400/400" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" style="transition: transform 1s ease;">
-                            <img src="https://picsum.photos/id/2/300/300" class="d-block w-100" alt="...">
+                            <img src="https://picsum.photos/id/2/400/400" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" style="transition: transform 1s ease;">
-                            <img src="https://picsum.photos/id/2/300/300" class="d-block w-100" alt="...">
+                            <img src="https://picsum.photos/id/2/400/400" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" style="transition: transform 1s ease;">
-                            <img src="https://picsum.photos/id/2/300/300" class="d-block w-100" alt="...">
+                            <img src="https://picsum.photos/id/2/400/400" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide="prev" id="carousel-prod-viewer__prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-prod-viewer" data-bs-slide="next" id="carousel-prod-viewer__next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 d-flex flex-column flex-nowrap px-4" id="prod-info-container">
+            <div class="col-12 col-lg-8 d-flex flex-column flex-nowrap px-4" id="prod-info-container">
                 <div>
-                    <h2 class="mb-3">
+                    <h2 class="mb-3 pb-2 mt-4">
                         Nombre del producto Nombre del producto
                     </h2>
                 </div>
-                <div class="container-fluid">
-                    <p class="m-0">
-                        <span>Precio web</span> $3333333
-                    </p>
+                <div class="container-fluid" id="prod-price-container">
+                    <div class="container-fluid p-0">
+                        <p>
+                            <span>Precio web</span> $3333333
+                        </p>
+                    </div>
+                    <div class="container-fluid p-0">
+                        <p>
+                            <span>Precio de lista</span> $5555555
+                        </p>
+                    </div>
                 </div>
-                <div class="container-fluid">
-                    <p class="m-0">
-                        <span>Precio de lista</span> $5555555
-                    </p>
-                </div>
-                <div class="container-fluid">
+                
+                <div class="container-fluid" id="prod-service-container">
                     <div>
                         <p class="m-0">
-                            Garantía
+                            <i class="fas fa-shield-alt"></i> Garantía - 6 meses
                         </p>
                     </div>
                     <div>
                         <p class="m-0">
-                            Stock disponible
+                            <i class="fas fa-check"></i> Stock disponible
                         </p>
                     </div>
                     <div>
                         <p class="m-0">
-                            Envíos a todo el país
+                            <i class="fas fa-truck"></i> Envíos a todo el país
                         </p>
                     </div>
                 </div>
-                <div class="container-fluid p-0">
-                    Sumar al carrito
+                <div class="container-fluid p-0 " id="prod-button-container">
+                    <button class="px-4 py-2 mt-3">
+                        <i class="fas fa-cart-plus" style="opacity: .6;"></i>
+                        <a href="error-page.html">Agregar al carrito</a>
+                    </button>
                 </div>
             </div>
         </div>
