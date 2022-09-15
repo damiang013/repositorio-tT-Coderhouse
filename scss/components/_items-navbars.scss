@@ -11,17 +11,18 @@
         #navbar-toggler{
             background: map-get($color, gray-m);
                 button{
-                    h2{
+                    p:first-child{
                         color: #fff;
                         font-weight: $fw-3;
+                        font-size: $fs-l;
                     }
-                    h6{
+                    p:last-child{
                         font-size: $fs-xs;
                         color: #cccccc;
                     }
                 }
         }
-        h2{
+        h1{
             font-size: $fs-xl;
             font-weight: $fw-6;
             width: 100%;

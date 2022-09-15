@@ -1,4 +1,4 @@
-#index-container h5{
+#index-container h2{
     font-family: $sec-font;
     font-weight: $fw-6;
     text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .prod-container, .last-prod-container{
-    @include index-prods-containers-style
+    @include index-prods-containers-style;
 }
 
 #carousel-prod__indicators{
@@ -56,15 +56,19 @@
         "prod-img prod-price prod-price"
         "prod-img . view-button";
     transition: all .5s ease;
-    background: #fff;
-        img{
+        .prod__card__img-container{
+            height: 300px;
+            margin: 20px;
             grid-area: prod-img;
-            max-width: 100%;
-            width: 300px;
             align-self: center;
             justify-self: center;
+                img{
+                    height: 90%;
+                    @include pos-center
+                }
         }
-        h6{
+        
+        .prod__title{
             grid-area: prod-title;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
@@ -77,11 +81,11 @@
             grid-area: prod-price;
             position: relative;
             margin-left: 25px;
-                h4{
+                .prod__price{
                     font-family: $sec-font;
                     font-size: $fs-xl;
                     font-weight: $fw-3;
-                    margin: 0;
+                    margin: 0 0 15px 0;
                     padding: 0;
                     text-align: start;
                     display: block;
@@ -101,22 +105,24 @@
             font-family: $sec-font;
             font-size: $fs-m;
             text-decoration: none;
-            color: #fff;
-            border: $border-b;
-            background: $b-purple-background;
+            color: #000;
+            @extend .inputs-style;
+            background: #fff;
+            font-weight: $fw-6;
+            transition: 0.2s;
                 &:hover{
-                    animation: shadow-btn 0.2s ease-in both;
-                    color: #fff;
+                    color: #000;
+                    box-shadow: $pink-box-shadow;
                 }
         }
 }
 
-#prod__prev-arrow{
-    left: -6%; 
+.prod__prev-arrow{
+    left: -6% !important; 
 }
 
-#prod__next-arrow{
-    right: -6%;
+.prod__next-arrow{
+    right: -6% !important;
 }
 
 .categories-container{
@@ -131,28 +137,29 @@
     width: $w-80;
     height: 700px;
     margin: auto;
-    gap: 15px;
+    gap: 20px;
         div{
             border-radius: $border-r-m;
             padding: 10px;
             text-align: center;
-            transform: all .3s;
+            transition: transform .3s;
             box-shadow: $basic-box-shadow;
             position: relative;
             display: flex;
             flex-flow: column nowrap;
             justify-content: end;
+            background: #fff;
                 &:hover{
-                    animation: shadow-btn 0.2s ease-in both;
-                    border: $border-b;
+                    transform: scale(1.03);
                 }
                 img{
-                    opacity: 0.7;
+                    opacity: 0.5;
                     max-width: 90%;
                     max-height: 90%;
                     @include pos-center;
+                    object-fit: contain;
                 }
-                h6{
+                h4{
                     font-family: $sec-font;
                     color: #000;
                     font-size: $fs-m;
@@ -161,9 +168,17 @@
                 }
                 a{
                     font-family: $sec-font;
-                    color: map-get($color, purple-m);
+                    color: #000;
                     text-decoration: none;
                     position: relative;
+                    display: block;
+                    width: 60%;
+                    padding: 6px 0;
+                    margin: 0 auto;
+                    border-radius: $border-r-s;
+                    border: $border-p;
+                    background: #fff;
+                    @include pink-glow-hover
                 }
         }
 }
@@ -221,10 +236,23 @@
         div{
             width: 150px;
             height: 150px;
-            border-radius: $border-r-l;
             margin: 0 50px;
             box-shadow: $basic-box-shadow;
+            border-radius: $border-r-l;
             background: #fff;
+            overflow: hidden;
+            @include flex-center;
+                &:nth-child(7), &:nth-child(12), &:nth-child(20), &:nth-child(25){
+                    background: #000;
+                }
+                &:nth-child(8), &:nth-child(21){
+                    background: #0071c5;
+                }
+                img{
+                    object-fit: contain;
+                    width:90%;
+                    height: 90%;
+                }
         }
 }
 

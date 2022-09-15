@@ -2,7 +2,8 @@
     background-image: url(../media/technical-difficulties-bg.jpg);
     background-size: 100% 100%;
     padding: 33px 0;
-        h3{
+    box-shadow: $basic-box-shadow;
+        h1{
             font-size: $fs-xxl;
             font-family: $main-font;
             font-weight: $fw-6;
@@ -13,12 +14,12 @@
             border: $border-b;
             box-shadow: $bold-box-shadow;
         }
-        h5{
+        h2{
             font-size: $fs-l;
             font-family: $sec-font;
             background: #fff;
             margin: $random-size;
-            padding: 15px 10px;
+            padding: 15px 20px;
             border: $border-b;
             box-shadow: $bold-box-shadow;
         }

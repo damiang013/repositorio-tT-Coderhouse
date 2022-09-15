@@ -30,6 +30,14 @@
 
 #item-card{
     box-shadow: $basic-box-shadow;
+        img{
+            width: 90%;
+            height: 90%;
+            padding: 13px 13px;
+            box-shadow: $pink-box-shadow;
+            border: $border-p;
+            margin: 13px 13px;
+        }
         h4{
             font-size: $fs-m;
             font-weight: $fw-3;
@@ -40,11 +48,25 @@
             font-size: $fs-m;
             font-weight: $fw-6;
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 0 0 0;
             font-family: $sec-font;
         }
+        h6{
+            text-align: center;
+            font-family: $sec-font;
+            font-size: $fs-s;
+            font-weight: $fw-3;
+            color: map-get($color ,  purple-s);
+            opacity: .8;
+        }
         a{
-            background: radial-gradient(circle, rgba(83,1,98,1) 33%, rgba(38,38,38,1) 80%);
+            background: map-get($color , gray-m);
+                &:hover i{
+                    transform: scale(0.9)
+                }
+                i{
+                    transition: .3s;
+                }
         }
         .badge{
             background: map-get($color, green-m) !important;

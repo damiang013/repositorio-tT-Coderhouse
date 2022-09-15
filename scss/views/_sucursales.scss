@@ -1,14 +1,14 @@
 #sucursales-container{
     width: $w-80;
-        h4{
+    background: $w-pink-background;
+    box-shadow: $basic-box-shadow;
+        h1{
             font-family: $main-font;
-            font-size: $fs-m;
+            font-size: $fs-l;
+            font-weight: $fw-6;
             padding: 15px 20px;
-            animation: shadow-btn .4s ease both;
             animation-delay: 1s;
             text-align: center;
-            background: #fff;
-            border: $border-b;
             width: auto;
             margin: auto;
         }
@@ -19,9 +19,9 @@
             border-radius: $border-r-m;
             margin: 10px;
         }
-        h6{
+        h4{
             font-family: $main-font;
-            font-size: $fs-xs;
+            font-size: $fs-s;
             font-weight: $fw-6;
             text-align: center;
         }

@@ -7,15 +7,11 @@
     width: $w-80;
     height: auto;
     margin: 90px auto;
-    background: linear-gradient(45deg,#cc00ff 0%, #e7e7e7 60%) !important;
-    box-shadow: $bold-box-shadow;
-    border: $border-b;
-        *>{
-            font-family: $main-font;
-            font-weight: $fw-6;
-        }
+    background: $w-pink-background !important;
+    box-shadow: $basic-box-shadow;
         form{
-            h4{
+            h1{
+                font-family: $main-font;
                 font-size: $fs-l;
                 font-weight: $fw-6;
                 padding: 20px;
@@ -31,14 +27,15 @@
                 height: 2.5em;
                 display: block;
                 margin: auto;
-                @extend #inputs-style;
+                @extend .inputs-style;
                 font-weight: $fw-6;
                 font-size: $fs-m;
+                @include pink-glow-hover
             }
         }
 }
 
-#inputs-style{
-    border: $border-p;
-    border-radius: $border-r-s;
+.inputs-style{
+    border: $border-p !important;
+    border-radius: $border-r-s !important;
 }

@@ -1,9 +1,9 @@
 #arma-tu-pc-container{
-    background: #fff;
+    background: $w-pink-background;
     padding: $random-size 50px;
     box-shadow: $basic-box-shadow;
     width: $w-80;
-        h4{
+        h1{
             font-family: $main-font;
             font-size: $fs-xl;
             font-weight: $fw-6;
@@ -12,6 +12,7 @@
         }
         p{
             font-family: $main-font;
+            background: #fff;
             border: $border-b;
             font-size: $fs-m;
             padding: 20px 0 20px 15px;
@@ -26,5 +27,6 @@
             height: auto;
             display: block;
             margin: 15px auto;
+            box-shadow: $pink-box-shadow;
         }
 }

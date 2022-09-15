@@ -1,16 +1,9 @@
 #carousel-prod-viewer{
     width: 70%;
     margin: auto;
-        #carousel-prod-viewer__button{
-            button{
-                width: 13px;
-                height: 13px;
-                border-radius: $border-r-l;
-                background-color: map-get($color , purple-m);
-            }
-        }
         #carousel-prod-viewer__prev{
             left: -13%;
+            color: red;
         }
         #carousel-prod-viewer__next{
             right: -13%;
@@ -44,12 +37,20 @@
         #prod-button-container{
             @include flex-center;  
                 button{
-                    @extend #inputs-style;
+                    @extend .inputs-style;
                     font-size: $fs-xs;
+                        @include pink-glow-hover;
                         a{
                             color: #000;
                             text-decoration: none;
                         }
                 }
         }
+}
+
+.prod-specs{
+    font-family: $sec-font;
+    font-size: $fs-s;
+    text-align: center;
+    display: block;
 }

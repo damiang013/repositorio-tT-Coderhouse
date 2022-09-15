@@ -27,7 +27,8 @@
     width: $w-80;
     height: auto;
     margin: 0 auto 50px auto;
-    border: $border-p;
+    box-shadow: $basic-box-shadow;
+    background: $w-pink-background;
 }
 
 @mixin pos-center {
@@ -41,4 +42,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin pink-glow-hover {
+    transition-duration: .2s;
+        &:hover{
+            box-shadow: $pink-box-shadow;
+        }
 }
