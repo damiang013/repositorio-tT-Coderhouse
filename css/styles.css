@@ -669,8 +669,7 @@ body {
   width: 70%;
   margin: auto; }
   #carousel-prod-viewer #carousel-prod-viewer__prev {
-    left: -13%;
-    color: red; }
+    left: -13%; }
   #carousel-prod-viewer #carousel-prod-viewer__next {
     right: -13%; }
 
